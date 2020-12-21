@@ -19,8 +19,16 @@
 }
 
 /* Styling for websites section */
-.section img {
+/* .section-title {
+	text-align: center;
+} */
+
+.card-columns {
 	width: 100%;
+}
+
+.card {
+	width: 60%;
 }
 
 div.text {
