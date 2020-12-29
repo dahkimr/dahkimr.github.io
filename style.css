@@ -1,7 +1,7 @@
 /* Styling for banner */
 .banner {
 	position: relative;
-	height: 300px;
+	height: 500px;
 }
 
 #background {
@@ -12,7 +12,7 @@
 
 #person  {
 	position: absolute;
-	width: 50%;
+	width: 300px;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -23,12 +23,13 @@
 	text-align: center;
 }
 
-.card-columns {
-	width: 100%;
+.container {
+	width: 70%;
 }
 
 .card {
-	width: 60%;
+	/* let's change width by viewport */
+	margin-bottom: 10px;
 }
 
 div.text {
@@ -43,4 +44,22 @@ div.text {
 	width: 10%;
 	margin-left: 2px;
 	margin-bottom: 5px;
+}
+
+@media (min-width: 576px) {
+	.container {
+		width: 100%
+	}
+}
+/* @media (min-width: 768px) {
+} */
+@media (min-width: 992px) {
+	.container {
+		width: 80%;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+		width: 50%;
+	}
 }
