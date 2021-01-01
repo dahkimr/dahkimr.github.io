@@ -1,28 +1,186 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <meta charset="UTF-8">
-        <title>Lab 1</title>
-	      <link rel="stylesheet" href="style.css">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-        <nav>
-                <a class="navbar" href="index.html">HOME</a>
-                <a class="navbar" href="coding.html">CODING_PROJECTS</a>
-                <a class="navbar" href="graphics.html">GRAPHICS_WORK</a>
-        </nav>
 
-	<main class="container">
-			<header>
-				<h1 class="top">Dahee</h1>
-			  <p class="top">A programmer in the making who loves to learn.</p>
-        <p class="top">Currently studying at Ryerson University, but also looking for job opportunities.</p>
-        <section class="home">
-          <a class="home" href="https://github.com/dahkimr">Github</a>
-        </section>
-      </header>
-	</main>
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="navbar" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar" href="coding.html">CODING_PROJECTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar" href="graphics.html">GRAPHICS_WORK</a>
+        </li>
+      </ul>
+    </div>
+  </nav> -->
+
+  <div class="banner">
+    <img id="background" class="mx-auto d-block img-fluid" src="img/banner.png" alt="banner"/>
+
+    <img id="person" class="mx-auto d-block img-fluid" src="img/person.png" alt="person" />
+  </div>
+
+  <!-- Websites -->
+  <div class="container">
+    <h2 class="section-title mt-3 mb-3">Websites</h2>
+
+    <div class="row">
+      <div class="col-12 col-sm-6">
+        <div class="card">
+          <img class="card-img-top" src="img/cookies-for-boredom.png" alt="site screenshot" />
+          <div class="card-block p-2">
+            <h5 class="card-title">
+              Cookies for Boredom
+            </h5>
+            <a href="https://github.com/dahkimr/cookies-for-boredom-react">
+              <img id="git-icon" src="img/git-icon.svg" alt="github icon"/>
+            </a>
+            <div class="card-text">
+              <h6>Grab a cookie if you're bored!</h6>
+              <p>
+                On this site, you can add and take messages of ideas of things to do from a cookie jar.
+              </p>
+              <p>
+                Tools: React, MongoDB
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6">
+        <div class="card mx-auto">
+          <img class="card-img-top" src="img/foodgether.png" alt="site screenshot" />
+          <div class="card-block p-2">
+            <h5 class="card-title">
+              Foodgether
+            </h5>
+            <a href="https://github.com/dcvelarde/CPS630-Project">
+              <img id="git-icon" src="img/git-icon.svg" alt="github icon"/>
+            </a>
+            <div class="card-text">
+              <h6>Find new recipes</h6>
+              <p>
+                Search for recipes by ingredients and add filters like gluten-free or look for specific cuisines like Korean food.
+              </p>
+              <p>
+                Tools: Angular.js, SQL
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Games -->
+  <div class="container">
+    <h2 class="section-title mt-3 mb-3">Games</h2>
+
+    <div class="row">
+      <div class="col-12 col-sm-6">
+        <div class="card">
+          <img class="card-img-top" src="img/alone-rift.png" alt="game screenshot" />
+          <div class="card-block p-2">
+            <h5 class="card-title">Alone Rift</h5>
+            <a href="https://github.com/dahkimr/survival-archery-game-vr">
+              <img id="git-icon" src="img/git-icon.svg" alt="github icon"/>
+            </a>
+            <div class="card-text">
+              <p>
+                A survival game created for the Oculus Rift.
+                The player must hunt targets and mantain body to stay alive.  
+              </p>
+              <p>
+                Tools: Unity, SteamVR
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6">
+        <div class="card mx-auto">
+          <img class="card-img-top" src="img/snow-white-apples.png" alt="game screenshot" />
+          <div class="card-block p-2">
+            <h5 class="card-title">Snow White Apples</h5>
+            <a href="https://github.com/dahkimr/snow-white-apples-unity">
+              <img id="git-icon" src="img/git-icon.svg" alt="github icon"/>
+            </a>
+            <div class="card-text">
+              <p>
+                A game where the player needs to smash the good apples and avoid the bad apples.
+              </p>
+              <p>
+                Tools: Unity
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Graphic Design -->
+  <div class="container">
+    <h2 class="section-title mt-3 mb-3">Graphic Design</h2>
+
+    <div class="row">
+      <div class="col-12 col-sm-6">
+        <div class="card">
+          <img class="card-img-top" src="img/r1.png" alt="graphic work screenshot" />
+          <div class="card-block p-2">
+            <h5 class="card-title">Ryerson Tech Society</h5>
+            <div class="card-text">
+              <p>
+                Created promotional posters in RTS, a student group with the purpose of cultivating technical skills.
+              </p>
+              <p>
+                Tools: Gimp
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6">
+        <div class="card mx-auto">
+          <img class="card-img-top" src="img/i2.png" alt="graphic work screenshot" />
+          <div class="card-block p-2">
+            <h5 class="card-title">Igniter Site</h5>
+            <div class="card-text">
+              <p>
+                Created banners for a school project.
+              </p>
+              <p>
+                Tools: Gimp
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </body>
 </html>
