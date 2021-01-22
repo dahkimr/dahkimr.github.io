@@ -7,7 +7,8 @@ function createStars() {
     let star = document.createElement('i');
     let x = Math.floor(Math.random() * screen.width);
 
-    let duration = Math.random() * (0.8 - 0.2) + 0.2;
+    // first time everything comes down the same, need to fix
+    let duration = Math.random() * (1.3 - 0.5) + 0.5;
     let h = Math.random() * 100;
 
     star.style.left = x + 'px';
@@ -21,6 +22,9 @@ function createStars() {
 }
 
 function stopStars() {
+  let stop = document.querySelector('.clickable');
+  stop.style.visibility = 'hidden';
+  
   let intro = document.querySelector('.intro');
   intro.addEventListener('animationend', () => {
     let stars = document.querySelectorAll('i');
