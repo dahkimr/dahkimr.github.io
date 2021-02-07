@@ -61,6 +61,7 @@
 	position: relative;
 	width: 320px;
 	z-index: 1; 
+	pointer-events: none;
 }
 
 /* Intro after stars stop */
@@ -68,7 +69,6 @@
 	visibility: hidden;
 	position: absolute;
 	font-family: "Bodoni Mt", "Arial";
-	transform: translateY(0);
 	color: #b4c3e7;
 	top: 0;
 	left: 0;
@@ -97,16 +97,34 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-.intro h1#two {
+
+h1.two {
 	position: absolute;
+	font-family: "Bodoni Mt", "Arial";
 	font-size: 150px;
 	white-space: nowrap;
 	top: 34%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-.intro h1#three {
+
+h1.blue {
+	color: #b4c3e7;
+	margin-top: 3px;
+	margin-left: -5px;
+	visibility: hidden;
+	z-index: 5;
+}
+
+h1.white {
+	color: #ffffff;
+	visibility: hidden;
+	z-index: 5;
+} 
+
+h1.three {
 	position: absolute;
+	font-family: "Bodoni Mt", "Arial";
 	font-size: 150px;
 	white-space: nowrap;
 	top: 50%;
