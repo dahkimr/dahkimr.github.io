@@ -62,6 +62,16 @@
 	width: 320px;
 	z-index: 1; 
 	pointer-events: none;
+	animation: animate 3s ease infinite;
+}
+
+@keyframes animate {
+	0%, 100% {
+		transform: translateY(-4px);
+	}
+	50% {
+		transform: translateY(4px);
+	}
 }
 
 /* Intro after stars stop */
