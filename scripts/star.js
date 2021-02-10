@@ -8,13 +8,14 @@ function createStars() {
     let x = Math.floor(Math.random() * screen.width);
 
     // first time everything comes down the same, need to fix
-    let duration = Math.random() * (1.3 - 0.5) + 0.5;
+    let duration = Math.random() * (1.3 - 0.6) + 0.6;
     let h = Math.random() * 100;
 
     star.style.left = x + 'px';
     star.style.width = 2 + 'px';
     star.style.height = 100 + h + 'px';
     star.style.animationDuration = duration + 's';
+    star.style.animationDelay = duration + 's';
 
     scene.appendChild(star)
     i++;
@@ -32,6 +33,10 @@ function stopStars() {
       stars[i].remove();
     }
   });
+
+  // also stop rocket
+  $('#person').css('animation-play-state', 'paused');
+
   intro.classList.add('moveInIntro');
   intro.style.visibility = 'visible';
 }
