@@ -42,6 +42,9 @@ function stopStars() {
 
   // try to add something to make it make you scroll down
   // and then should i indicate somehow that you can hover the text -- a little image saying hover with arrow?
-  let scrollMsg = document.querySelector('.msg');
-  scrollMsg.style.visibility = 'visible';
+  let scrollMsg = document.querySelectorAll('.msg');
+
+  for(let idx = 0; idx < scrollMsg.length; idx++) {
+    scrollMsg[idx].style.visibility = 'visible';
+  }
 }
