@@ -17,27 +17,6 @@
 </head>
 
 <body>
-
-  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="navbar" href="index.html">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a class="navbar" href="coding.html">CODING_PROJECTS</a>
-        </li>
-        <li class="nav-item">
-          <a class="navbar" href="graphics.html">GRAPHICS_WORK</a>
-        </li>
-      </ul>
-    </div>
-  </nav> -->
-
   <!-- my scripts -->
   <div class="banner">
     <div class="stop clickable" onclick="stopStars()">Stop</div>
@@ -46,7 +25,11 @@
       <h1 id="one">Hello, I'm Dahee</h1>
       <h1 class="two">Programmer</h1>
       <h1 class="three">& Designer</h1>
+      <h2 class="msg main">(Scroll down to check out my work)</h2>
+      <h2 class="msg arr1">v</h2>
+      <h2 class="msg arr2">v</h2>
     </div>
+    <!-- consider changing to websites and games -->
     <h1 class="two blue">Programmer</h1>
     <h1 class="two white">Programmer</h1>
     <h1 class="three blue">& Designer</h1>
@@ -55,7 +38,109 @@
 
   <!-- add the hackathon app -->
   <!-- Websites -->
-  <div class="container">
+  <!-- make a separate thin banner for title -->
+  <!-- set size of container to be certain size in wider viewports -->
+  <div class="content-holder">
+    <div class="content-container">
+      <h2>Websites & Apps</h2>
+      <div class="box">
+        <span></span>
+        <div class="content">
+          <img class="icon" src="img/cookie-icon.svg" alt="cookie icon"/>
+          <h2>Cookies for Boredom</h2>
+          <p>
+            Take cookies with ideas of things to do, and add your own cookies
+            with ideas!
+          </p>
+          <!-- page icon or button -->
+          <!-- github icon or button -->
+          <a title="Content to be updated" data-toggle="tooltip">Project</a>
+          <a href="https://github.com/dahkimr/cookies-for-boredom-react">Github</a>
+        </div>
+      </div>
+      
+      <div class="box">
+        <span></span>
+        <div class="content">
+          <img class="icon" src="img/fork-icon.svg" alt="recipe icon"/>
+          <h2>Foodgether</h2>
+          <p>Find new recipes by inputting ingredients and add filters like gluten-free or look for specific cuisines like Korean food.</p>
+          <a title="Content to be updated" data-toggle="tooltip">Project</a>
+          <a href="https://github.com/dahkimr/foodgether-site-angular">Github</a>
+        </div>
+      </div>
+      
+      <div class="box">
+        <span></span>
+        <div class="content">
+          
+          <img class="icon" src="img/list-icon.svg" alt="wish icon"/>
+          <h2>Wishlist Wizard</h2>
+          <p>Finance app for kids. Parent users will get the child users items on their wishlist when they reach their goals.</p>
+          <a title="Content to be updated" data-toggle="tooltip">Project</a>
+          <a href="https://github.com/dahkimr/Wish-List-SheHacks">Github</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-holder">
+    <div class="content-container">
+      <h2>Games</h2>
+      <div class="box">
+        <span></span>
+        <div class="content">
+          <img class="icon" src="img/archery-icon.svg" alt="survival icon"/>
+          <h2>Alone Rift VR</h2>
+          <p>
+            A survival game created for the Oculus Rift.
+            The player must hunt targets and mantain body to stay alive.
+          </p>
+          <a href="https://sites.google.com/view/alonerift">Project</a>
+          <a href="https://github.com/dahkimr/survival-archery-game-vr">Github</a>
+        </div>
+      </div>
+      
+      <div class="box">
+        <span></span>
+        <div class="content">
+          <img class="icon" src="img/apple-icon.svg" alt="apple icon"/>
+          <h2>Snow White Apples</h2>
+          <p>A game where the player needs to smash the good apples and avoid the bad apples.</p>
+          <a title="Content to be updated" data-toggle="tooltip">Project</a>
+          <a href="https://github.com/dahkimr/snow-white-apples-unity">Github</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-holder">
+    <div class="content-container">
+      <h2>Graphic Design</h2>
+      <div class="box">
+        <span></span>
+        <div class="content">
+          <img class="icon" src="img/poster-icon.svg" alt="poster icon"/>
+          <h2>Ryerson Tech Society</h2>
+          <p>
+            Created promotional posters in RTS, a student group with the purpose of cultivating technical skills.
+          </p>
+          <a title="Content to be updated" data-toggle="tooltip">Project</a>
+        </div>
+      </div>
+      
+      <div class="box">
+        <span></span>
+        <div class="content">
+          <img class="icon" src="img/image-icon.svg" alt="image icon"/>
+          <h2>Igniter Site</h2>
+          <p>Created banners for a website created with CodeIgniter for a school project.</p>
+          <a title="Content to be updated" data-toggle="tooltip">Project</a>
+        </div>
+      </div>
+  </div>
+
+  <!-- <div class="container-old">
     <h2 class="section-title mt-3 mb-3">Websites</h2>
 
     <div class="row">
@@ -104,10 +189,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- Games -->
-  <div class="container">
+  <!-- <div class="container-old">
     <h2 class="section-title mt-3 mb-3">Games</h2>
 
     <div class="row">
@@ -151,10 +236,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- Graphic Design -->
-  <div class="container">
+  <!-- <div class="container-old">
     <h2 class="section-title mt-3 mb-3">Graphic Design</h2>
 
     <div class="row">
@@ -191,7 +276,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
