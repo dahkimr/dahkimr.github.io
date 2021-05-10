@@ -4,6 +4,11 @@
 	box-sizing: border-box;
 }
 
+body {
+	overflow: scroll;
+	scroll-snap-type: y mandatory;
+}
+
 /* Styling for banner */
 .banner {
 	position: relative;
@@ -14,6 +19,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	scroll-snap-align: start;
 }
 
 .banner i {
@@ -163,10 +169,6 @@ h2.msg.arr2 {
 	}
 }
 
-.test {
-	width: 100%;
-}
-
 /* Styling for content */
 .content-holder {
 	display: flex;
@@ -174,6 +176,7 @@ h2.msg.arr2 {
 	align-items: center;
 	min-height: 100vh;
 	background: #111;
+	scroll-snap-align: start;
 }
 
 .content-container > h2 {
@@ -269,8 +272,8 @@ h2.msg.arr2 {
 	pointer-events: none;
 }
 
-#cookie-icon {
-	width: 80px;
+.icon {
+	height: 80px;
 	margin-bottom: 10px;
 }
 
@@ -308,4 +311,5 @@ h2.msg.arr2 {
 	padding: 10px;
 	text-decoration: none;
 	font-weight: 700;
+	margin: 0px 5px;
 }
