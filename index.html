@@ -1,292 +1,68 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
-  <!-- JQuery -->
-  <link href="external-scripts/jquery-3.5.1.min.js" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Fonts -->
-
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <!-- my scripts -->
-  <div class="banner">
-    <div class="stop clickable" onclick="stopStars()">Stop</div>
-    <img id="person" class="mx-auto d-block img-fluid" src="img/person.png" alt="person" />
+    <!-- Font styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Merriweather&family=Montserrat&display=swap" rel="stylesheet">
+  </head>
+  <body>
     <div class="intro">
-      <h1 id="one">Hello, I'm Dahee</h1>
-      <h1 class="two">Programmer</h1>
-      <h1 class="three">& Designer</h1>
-      <h2 class="msg main">(Scroll down to check out my work)</h2>
-      <h2 class="msg arr1">v</h2>
-      <h2 class="msg arr2">v</h2>
-    </div>
-    <!-- consider changing to websites and games -->
-    <h1 class="two blue">Programmer</h1>
-    <h1 class="two white">Programmer</h1>
-    <h1 class="three blue">& Designer</h1>
-    <h1 class="three white">& Designer</h1>
-  </div>
-
-  <!-- add the hackathon app -->
-  <!-- Websites -->
-  <!-- make a separate thin banner for title -->
-  <!-- set size of container to be certain size in wider viewports -->
-  <div class="content-holder">
-    <div class="content-container">
-      <h2>Websites & Apps</h2>
-      <div class="box">
-        <span></span>
-        <div class="content">
-          <img class="icon" src="img/cookie-icon.svg" alt="cookie icon"/>
-          <h2>Cookies for Boredom</h2>
-          <p>
-            Take cookies with ideas of things to do, and add your own cookies
-            with ideas!
-          </p>
-          <!-- page icon or button -->
-          <!-- github icon or button -->
-          <!-- <a href="cookies-for-boredom.html">Project</a> -->
-          <a href="https://github.com/dahkimr/cookies-for-boredom-react">Github</a>
-        </div>
-      </div>
-      
-      <div class="box">
-        <span></span>
-        <div class="content">
-          <img class="icon" src="img/fork-icon.svg" alt="recipe icon"/>
-          <h2>Foodgether</h2>
-          <p>Find new recipes by inputting ingredients and add filters like gluten-free or look for specific cuisines like Korean food.</p>
-          <!-- <a title="Content to be updated" data-toggle="tooltip">Project</a> -->
-          <a href="https://github.com/dahkimr/foodgether-site-angular">Github</a>
-        </div>
-      </div>
-      
-      <div class="box">
-        <span></span>
-        <div class="content">
-          
-          <img class="icon" src="img/list-icon.svg" alt="wish icon"/>
-          <h2>Wishlist Wizard</h2>
-          <p>Finance app for kids. Parent users will get the child users items on their wishlist when they reach their goals.</p>
-          <!-- <a title="Content to be updated" data-toggle="tooltip">Project</a> -->
-          <a href="https://github.com/dahkimr/Wish-List-SheHacks">Github</a>
+      <div class="text">
+        <div class="header">DAE KIM</div>
+        <div class="subtext">Website & Game Developer</div>
+        <div class="icons">
+          <img class="icon i1" onclick="location.href='https://github.com/dahkimr'" src="img/icons/github.png">
+          <img class="icon i2" onclick="location.href='https://www.linkedin.com/in/dahee-kim/'" src="img/icons/linked-in.png">
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="content-holder">
-    <div class="content-container">
-      <h2>Games</h2>
-      <div class="box">
-        <span></span>
-        <div class="content">
-          <img class="icon" src="img/archery-icon.svg" alt="survival icon"/>
-          <h2>Alone Rift VR</h2>
-          <p>
-            A survival game created for the Oculus Rift.
-            The player must hunt targets and mantain body to stay alive.
-          </p>
-          <a href="https://sites.google.com/view/alonerift">Project</a>
-          <a href="https://github.com/dahkimr/survival-archery-game-vr">Github</a>
-        </div>
-      </div>
-      
-      <div class="box">
-        <span></span>
-        <div class="content">
-          <img class="icon" src="img/apple-icon.svg" alt="apple icon"/>
-          <h2>Snow White Apples</h2>
-          <p>A game where the player needs to smash the good apples and avoid the bad apples.</p>
-          <!-- <a title="Content to be updated" data-toggle="tooltip">Project</a> -->
-          <a href="https://github.com/dahkimr/snow-white-apples-unity">Github</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="content-holder">
-    <div class="content-container">
-      <h2>Graphic Design</h2>
-      <div class="box">
-        <span></span>
-        <div class="content">
-          <img class="icon" src="img/poster-icon.svg" alt="poster icon"/>
-          <h2>Ryerson Tech Society</h2>
-          <p>
-            Created promotional posters in RTS, a student group with the purpose of cultivating technical skills.
-          </p>
-          <!-- <a title="Content to be updated" data-toggle="tooltip">Project</a> -->
-        </div>
-      </div>
-      
-      <div class="box">
-        <span></span>
-        <div class="content">
-          <img class="icon" src="img/image-icon.svg" alt="image icon"/>
-          <h2>Igniter Site</h2>
-          <p>Created banners for a website created with CodeIgniter for a school project.</p>
-          <!-- <a title="Content to be updated" data-toggle="tooltip">Project</a> -->
-        </div>
-      </div>
-  </div>
-
-  <!-- <div class="container-old">
-    <h2 class="section-title mt-3 mb-3">Websites</h2>
-
-    <div class="row">
-      <div class="col-12 col-sm-6">
-        <div class="card">
-          <img class="card-img-top" src="img/cookies-for-boredom.png" alt="site screenshot" />
-          <div class="card-block p-2">
-            <h5 class="card-title">
-              Cookies for Boredom
-            </h5>
-            <a href="https://github.com/dahkimr/cookies-for-boredom-react">
-              <img id="git-icon" src="img/git-icon.svg" alt="github icon"/>
-            </a>
-            <div class="card-text">
-              <h6>Grab a cookie if you're bored!</h6>
-              <p>
-                On this site, you can add and take messages of ideas of things to do from a cookie jar.
-              </p>
-              <p>
-                Tools: React, MongoDB
-              </p>
-            </div>
+    <div class="section apps">
+      <div class="header">Websites & Applications</div>
+      <div class="cards">
+        <div class="card c1" onclick="location.href='https://github.com/dahkimr/foodgether-site-angular'">
+          <div class="text">
+            <div class="header">Foodgether</div>
+            <div class="subtext">Recipe search website</div>
           </div>
         </div>
-      </div>
-      <div class="col-12 col-sm-6">
-        <div class="card mx-auto">
-          <img class="card-img-top" src="img/foodgether.png" alt="site screenshot" />
-          <div class="card-block p-2">
-            <h5 class="card-title">
-              Foodgether
-            </h5>
-            <a href="https://github.com/dcvelarde/CPS630-Project">
-              <img id="git-icon" src="img/git-icon.svg" alt="github icon"/>
-            </a>
-            <div class="card-text">
-              <h6>Find new recipes</h6>
-              <p>
-                Search for recipes by ingredients and add filters like gluten-free or look for specific cuisines like Korean food.
-              </p>
-              <p>
-                Tools: Angular.js, SQL
-              </p>
-            </div>
+        <div class="card c2" onclick="location.href='https://github.com/dahkimr/cookies-for-boredom-react'">
+          <div class="text">
+            <div class="header">Cookies for Boredom</div>
+            <div class="subtext">Activity randomizer website</div>
+          </div>
+        </div>
+        <div class="card c3" onclick="location.href='https://github.com/dahkimr/Wish-List-SheHacks'">
+          <div class="text">
+            <div class="header">Wishlist Wizard</div>
+            <div class="subtext">Finance app for kids</div>
           </div>
         </div>
       </div>
     </div>
-  </div> -->
-
-  <!-- Games -->
-  <!-- <div class="container-old">
-    <h2 class="section-title mt-3 mb-3">Games</h2>
-
-    <div class="row">
-      <div class="col-12 col-sm-6">
-        <div class="card">
-          <img class="card-img-top" src="img/alone-rift.png" alt="game screenshot" />
-          <div class="card-block p-2">
-            <h5 class="card-title">Alone Rift</h5>
-            <a href="https://github.com/dahkimr/survival-archery-game-vr">
-              <img id="git-icon" src="img/git-icon.svg" alt="github icon"/>
-            </a>
-            <div class="card-text">
-              <p>
-                A survival game created for the Oculus Rift.
-                The player must hunt targets and mantain body to stay alive.  
-              </p>
-              <p>
-                Tools: Unity, SteamVR
-              </p>
-            </div>
+    <div class="section games">
+      <div class="header">Games</div>
+      <div class="cards">
+        <div class="card c1" onclick="location.href='https://github.com/dahkimr/survival-archery-game-vr'">
+          <div class="text">
+            <div class="header">Alone Rift VR</div>
+            <div class="subtext">Archery survival game</div>
           </div>
         </div>
-      </div>
-      <div class="col-12 col-sm-6">
-        <div class="card mx-auto">
-          <img class="card-img-top" src="img/snow-white-apples.png" alt="game screenshot" />
-          <div class="card-block p-2">
-            <h5 class="card-title">Snow White Apples</h5>
-            <a href="https://github.com/dahkimr/snow-white-apples-unity">
-              <img id="git-icon" src="img/git-icon.svg" alt="github icon"/>
-            </a>
-            <div class="card-text">
-              <p>
-                A game where the player needs to smash the good apples and avoid the bad apples.
-              </p>
-              <p>
-                Tools: Unity
-              </p>
-            </div>
+        <div class="card c2" onclick="location.href='https://github.com/dahkimr/snow-white-apples-unity'">
+          <div class="text">
+            <div class="header">Snow White Apples</div>
+            <div class="subtext">Destroy apples game</div>
           </div>
         </div>
       </div>
     </div>
-  </div> -->
-
-  <!-- Graphic Design -->
-  <!-- <div class="container-old">
-    <h2 class="section-title mt-3 mb-3">Graphic Design</h2>
-
-    <div class="row">
-      <div class="col-12 col-sm-6">
-        <div class="card">
-          <img class="card-img-top" src="img/r1.png" alt="graphic work screenshot" />
-          <div class="card-block p-2">
-            <h5 class="card-title">Ryerson Tech Society</h5>
-            <div class="card-text">
-              <p>
-                Created promotional posters in RTS, a student group with the purpose of cultivating technical skills.
-              </p>
-              <p>
-                Tools: Gimp
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6">
-        <div class="card mx-auto">
-          <img class="card-img-top" src="img/i2.png" alt="graphic work screenshot" />
-          <div class="card-block p-2">
-            <h5 class="card-title">Igniter Site</h5>
-            <div class="card-text">
-              <p>
-                Created banners for a school project.
-              </p>
-              <p>
-                Tools: Gimp
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-  <script src="scripts/star.js"></script>
-  <script src="scripts/hover.js"></script>
-  <script>
-    createStars();
-  </script>
-
-</body>
+  </body>
 </html>
