@@ -5,8 +5,7 @@ body {
   background-image: url(img/banner_1080p.png);
   background-position: center center;
   background-repeat: no repeat;
-  /* background-attachment: fixed; */
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -118,8 +117,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   body {
-  /* The file size of this background image is 93% smaller
-  to improve page load speed on mobile internet connections */
-  background-image: url(img/banner_720p.png);
+    background-image: url(img/banner_720p.png);
+    background-attachment: scroll;
   }
 }
