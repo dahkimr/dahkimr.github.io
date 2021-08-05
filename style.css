@@ -1,12 +1,3 @@
-/* media queries */
-@media only screen and (max-width: 767px) {
-  body {
-  /* The file size of this background image is 93% smaller
-  to improve page load speed on mobile internet connections */
-  background-image: url(images/banner-small.jpg);
-  }
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -122,4 +113,13 @@ body {
 .card > .text > .subtext {
   font-family: 'Montserrat', serif;
   font-size: 15px;
+}
+
+/* media queries */
+@media only screen and (max-width: 767px) {
+  body {
+  /* The file size of this background image is 93% smaller
+  to improve page load speed on mobile internet connections */
+  background-image: url(img/banner-small.jpg);
+  }
 }
