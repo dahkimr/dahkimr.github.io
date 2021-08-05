@@ -2,11 +2,16 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  background-image: url(img/banner_1080p.png);
+  /* background-image: url(img/banner_1080p.png);
   background-position: center center;
   background-repeat: no repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: cover; */
+}
+
+div.banner {
+  position: relative;
+  overflow: hidden;
 }
 
 .intro {
@@ -115,9 +120,8 @@ body {
   font-size: 15px;
 }
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
   body {
     background-image: url(img/banner_720p.png);
-    background-attachment: scroll;
   }
-}
+} */
