@@ -57,6 +57,7 @@ body {
 	z-index: 1; 
 	pointer-events: none;
 	animation: animate 3s ease infinite;
+	image-rendering: -webkit-optimize-contrast;
 }
 
 @keyframes animate {
