@@ -1,0 +1,22 @@
+.primary {
+    border-radius: 30px;
+    padding: 8px 24px;
+    color: white;
+}
+
+.front {
+    border: 4px solid #2E4A37;
+    background-color: #2E4A37;
+    position: absolute;
+}
+
+.front:hover {
+    cursor: pointer;
+    transform: translate(-4px, -6px);
+}
+
+.behind {
+    border: 4px solid #1F3124;
+    background-color: #1F3124;
+    z-index: 999;
+}

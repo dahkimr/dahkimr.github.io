@@ -1,0 +1,16 @@
+.container {
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    background-color: #A8C0AA;
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,27 @@
+.container {
+    width: 18vw;
+    text-align: center;
+    background-color: #90A895;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding: 20px 20px;
+}
+
+.image {
+    width: 12vw;
+    filter: drop-shadow(16px, 16px, black);
+}
+
+.logo {
+    width: 40px;
+}
+
+.labelContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightSpace {
+    margin-right: 10px;
+}
