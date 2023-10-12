@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Tabs, Tab, Box } from "@mui/material";
+import { motion as m } from "framer-motion";
 import CoffeeIcon from '@mui/icons-material/Coffee';
 import IcecreamIcon from '@mui/icons-material/Icecream';
 import BubbleTeaBrown from "assets/boba-brown.png";
 import BubbleTeaGreen from "assets/boba-green.png";
 import BubbleTeaPurple from "assets/boba-purple.png";
-import VerticalSpacer from "components/atoms/VerticalSpacer";
 import styles from "./styles.module.scss";
 import ProjectCard from "components/molecules/ProjectCard";
 
@@ -44,7 +44,13 @@ const Menu = () => {
     };
 
     return (
-        <div className={styles.container}>
+        <m.div
+            className={styles.container}
+            initial={{ y: "100%" }}
+            animate={{ y: "0%" }}
+            transition={{ duration: 0.75, ease: "easeOut" }}  
+            // exit={{ opacity: 0 }}  
+        >
             <Box>
                 <Tabs
                     value={tabValue}
@@ -91,13 +97,47 @@ const Menu = () => {
                     />
                 </CustomTabPanel>
                 <CustomTabPanel value={tabValue} index={1}>
-                    Item 2
+                    <ProjectCard
+                        image={BubbleTeaBrown}
+                        text="Healing Trauma Korea"
+                        description="Therapy website and I'm adding more description later"
+                        labels={["React", "HTML & CSS"]}
+                    />
+                    <ProjectCard
+                        image={BubbleTeaGreen}
+                        text="Healing Trauma Korea"
+                        description="Therapy website and I'm adding more description later"
+                        labels={["React", "HTML & CSS"]}
+                    />
+                    <ProjectCard
+                        image={BubbleTeaPurple}
+                        text="Healing Trauma Korea"
+                        description="Therapy website and I'm adding more description later"
+                        labels={["React", "HTML & CSS"]}
+                    />
                 </CustomTabPanel>
                 <CustomTabPanel value={tabValue} index={2}>
-                    Item 3
+                    <ProjectCard
+                        image={BubbleTeaBrown}
+                        text="Healing Trauma Korea"
+                        description="Therapy website and I'm adding more description later"
+                        labels={["React", "HTML & CSS"]}
+                    />
+                    <ProjectCard
+                        image={BubbleTeaGreen}
+                        text="Healing Trauma Korea"
+                        description="Therapy website and I'm adding more description later"
+                        labels={["React", "HTML & CSS"]}
+                    />
+                    <ProjectCard
+                        image={BubbleTeaPurple}
+                        text="Healing Trauma Korea"
+                        description="Therapy website and I'm adding more description later"
+                        labels={["React", "HTML & CSS"]}
+                    />
                 </CustomTabPanel>
             </Box>
-        </div>
+        </m.div>
     );
 };
 

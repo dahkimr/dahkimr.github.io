@@ -2,6 +2,8 @@ import './App.css';
 import Welcome from './pages/Welcome';
 import Menu from 'pages/Menu';
 import { createTheme, ThemeProvider } from '@mui/material';
+import { Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from 'framer-motion';
 import { COLOURS } from 'styles/variables';
 
 const App = () => {
@@ -16,12 +18,16 @@ const App = () => {
         }
     });
 
+    const location = useLocation();
+
     return (
         <ThemeProvider theme={theme}>
-            <div className="App">
-                <Welcome />
-                <Menu />
-            </div>
+            <AnimatePresence initial={false}>
+                <Routes location={location} key={location.pathname}>
+                    <Route index element={<Welcome />} />
+                    <Route path="/menu" element={<Menu />} />
+                </Routes>
+            </AnimatePresence>
         </ThemeProvider>
     );
 }

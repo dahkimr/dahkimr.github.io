@@ -13,12 +13,14 @@ const ProjectCard = ({text, description, labels, image, alt}) => {
     return (
         <div className={styles.container}>
             <img src={image} alt={alt || "image"} className={styles.image} />
-            <Typography.CardTitle1 color={COLOURS.white} text={text} />
-            <VerticalSpacer height="6px" />
-            <Typography.CardDescription1 color={COLOURS.white} text={description} />
-            <VerticalSpacer height="18px" />
-            <div className={styles.labelContainer}>
-                {getLabels}
+            <div className={styles.textContainer}>
+                <Typography.CardTitle1 color={COLOURS.white} text={text} />
+                <VerticalSpacer height="6px" />
+                <Typography.CardDescription1 color={COLOURS.white} text={description} />
+                <VerticalSpacer height="18px" />
+                <div className={styles.labelContainer}>
+                    {getLabels}
+                </div>
             </div>
         </div>
     );

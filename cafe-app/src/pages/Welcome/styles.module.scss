@@ -1,0 +1,15 @@
+.container {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: no-repeat url("../../assets/boba-hero-img-min.png");
+    background-size: 100%;
+}
+
+.heroImage {
+    height: 100%;
+    background-color: #A8C0AA;
+    position: relative;
+}
