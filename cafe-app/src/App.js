@@ -1,6 +1,7 @@
 import './App.css';
-import Welcome from './pages/Welcome';
+import Welcome from 'pages/Welcome';
 import Menu from 'pages/Menu';
+import NavBar from 'components/molecules/NavBar';
 import { createTheme, ThemeProvider } from '@mui/material';
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from 'framer-motion';
@@ -22,7 +23,8 @@ const App = () => {
 
     return (
         <ThemeProvider theme={theme}>
-            <AnimatePresence initial={false}>
+            <AnimatePresence>
+                <NavBar />
                 <Routes location={location} key={location.pathname}>
                     <Route index element={<Welcome />} />
                     <Route path="/menu" element={<Menu />} />

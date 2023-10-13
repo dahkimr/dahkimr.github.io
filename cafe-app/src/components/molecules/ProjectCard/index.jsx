@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useAnimate, usePresence, stagger } from 'framer-motion';
 import Typography from 'components/atoms/Typography';
 import { COLOURS } from 'styles/variables';
 import Label from 'components/atoms/Label';
@@ -11,7 +12,7 @@ const ProjectCard = ({text, description, labels, image, alt}) => {
     );
 
     return (
-        <div className={styles.container}>
+        <div className={`${styles.container} projectCard`}>
             <img src={image} alt={alt || "image"} className={styles.image} />
             <div className={styles.textContainer}>
                 <Typography.CardTitle1 color={COLOURS.white} text={text} />

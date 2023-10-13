@@ -1,0 +1,11 @@
+.links {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    a {
+        margin-left: calc(1vw + 10px);
+        text-decoration: none;
+    }
+}

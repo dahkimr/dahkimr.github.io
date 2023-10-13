@@ -12,19 +12,24 @@ const Welcome = () => {
     const handleClick = () => navigate("/menu");
 
     return (
-        <m.div
-            className={styles.container}
-            initial={{ y: "100%" }}
-            animate={{ y: "0%" }}
-            transition={{ duration: 0.75, ease: "easeOut" }}  
-            // exit={{ opacity: 0 }}  
-        >
-            <div className={styles.content}>
-                <Typography.Heading1 text={"Welcome to \nDahee's Cafe"} color={COLOURS.darkGreen} />
+        <div className={styles.container}>
+            <m.div
+                className={styles.content}
+                initial={{ opacity: 0, y: "10%" }}
+                animate={{ opacity: 1, y: "0%" }}
+                transition={{ duration: 1, ease: "easeOut", delay: 0.14 }} 
+            >
+                <m.div
+                >
+                    <Typography.Heading1 text={"Welcome to \nDahee's Cafe"} color={COLOURS.darkGreen} />
+                </m.div>
                 <VerticalSpacer height="24px" />
-                <PrimaryButton text="See Menu" color={COLOURS.darkGreen} handleClick={handleClick}/>
-            </div>
-        </m.div>
+                <m.div
+                >
+                    <PrimaryButton text="See Menu" color={COLOURS.darkGreen} handleClick={handleClick}/>
+                </m.div>
+            </m.div>
+        </div>
     );
 };
 

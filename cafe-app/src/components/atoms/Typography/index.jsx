@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 import styles from "./styles.module.scss";
 
@@ -22,10 +22,20 @@ const Label = ({text, color}) => (
     <div className={styles.label} style={{color}}>{text}</div>
 );
 
+const TabLabel = ({text, color}) => (
+    <div className={styles.tabLabel} style={{color}}>{text}</div>
+);
+
+const Link = ({text, color}) => (
+    <div className={styles.link} style={{color}}>{text}</div>
+)
+
 export default {
     Heading1,
     ButtonLabel,
     CardTitle1,
     CardDescription1,
     Label,
+    TabLabel,
+    Link,
 };
