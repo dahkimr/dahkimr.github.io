@@ -1,15 +1,142 @@
 .container {
+    display: grid;
     text-align: center;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
+    // background: no-repeat url("../../assets/boba-hero-img-min.png");
+    // background-position: center;
+    // background-size: cover;
+}
+
+.headingContainer {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: no-repeat url("../../assets/boba-hero-img-min.png");
-    background-size: 100%;
+    flex-direction: column;
+    z-index: 10;
+
+    div {
+        width: 100%;
+    }
 }
 
-.heroImage {
-    height: 100%;
-    background-color: #A8C0AA;
-    position: relative;
+.imageContainer {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
 }
+
+.image {
+    // width: 100%;
+    height: 100%;
+}
+
+.blobContainer {
+    position: absolute;
+    overflow:hidden;
+    width: 100%;
+    height: 100vh;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: -3;
+}
+
+.blob {
+    position: absolute; 
+}
+
+.one {
+    width: 50vw;  
+    top: -10vw;
+    left: -10vw;
+    animation: blobAnim1 30s infinite linear; 
+}
+
+.two {
+    width: 50vw;  
+    bottom: -10vw;
+    left: 70vw;
+    animation: blobAnim2 28s infinite linear; 
+}
+
+@keyframes blobAnim1 {
+    0% {
+        rotate: 0;
+        scale: 1;
+        translate: 0 0;
+    }
+    25%{
+        translate: -20px -20px;
+    }
+    50% {
+        scale: 0.9;
+        translate: -20px 20px;
+    }
+    75% {
+        translate: 20px 20px;
+    }
+    100% {
+        rotate: 359deg;
+        scale: 1;
+    }
+}
+
+@keyframes blobAnim2 {
+    0% {
+        rotate: 0;
+        scale: 1;
+        translate: 0 0;
+    }
+    25%{
+        translate: -20px 20px;
+    }
+    50% {
+        scale: 0.9;
+        translate: 20px 20px;
+    }
+    75% {
+        translate: -20px 20px;
+    }
+    100% {
+        rotate: -359deg;
+        scale: 1;
+    }
+}
+
+// .bubbles {
+//     position: relative;
+//     display: flex;
+
+//     span {
+//         position: relative;
+//         width: 30px;
+//         height: 30px;
+//         background: #2E4A3744;
+//         margin: 0 4px;
+//         border-radius: 50%;
+//         box-shadow: 0 0 0 10px #2E4A3744, 0 0 50px #2E4A3744, 0 0 100px #2E4A3744;
+//         animation: animate 15s linear infinite;
+//         animation-duration: calc(150s / var(--i));
+//     }
+// }
+
+// .bubbles span:nth-child(even) {
+//     background: #ff2d75;
+//     border-radius: 50%;
+//     box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #ff2d75, 0 0 100px #ff2d75;
+// }
+
+// @keyframes animate {
+//     from {
+//         transform: translateY(100vh) scale(0.2);
+//     }
+//     to {
+//         transform: translateY(-10vh) scale(1);
+//     }
+// }

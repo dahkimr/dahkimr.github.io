@@ -6,6 +6,10 @@ const Heading1 = ({text, color}) => (
     <div className={styles.heading1} style={{color}}>{text}</div>
 );
 
+const Heading2 = ({text, color}) => (
+    <div className={styles.heading2} style={{color}}>{text}</div>
+);
+
 const ButtonLabel = ({text, color}) => (
     <div className={styles.buttonLabel} style={{color}}>{text}</div>
 );
@@ -32,6 +36,7 @@ const Link = ({text, color}) => (
 
 export default {
     Heading1,
+    Heading2,
     ButtonLabel,
     CardTitle1,
     CardDescription1,

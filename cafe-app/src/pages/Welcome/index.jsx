@@ -6,6 +6,9 @@ import PrimaryButton from "components/atoms/Buttons/PrimaryButton";
 import VerticalSpacer from "components/atoms/VerticalSpacer";
 import { COLOURS } from "styles/variables";
 import styles from "./styles.module.scss";
+import Blob1 from "assets/blob1.svg";
+import Blob2 from "assets/blob2.svg";
+import Background from "assets/boba-hero-img-min.png";
 
 const Welcome = () => {
     const navigate = useNavigate();
@@ -14,21 +17,28 @@ const Welcome = () => {
     return (
         <div className={styles.container}>
             <m.div
-                className={styles.content}
+                className={styles.headingContainer}
                 initial={{ opacity: 0, y: "10%" }}
                 animate={{ opacity: 1, y: "0%" }}
                 transition={{ duration: 1, ease: "easeOut", delay: 0.14 }} 
             >
-                <m.div
-                >
-                    <Typography.Heading1 text={"Welcome to \nDahee's Cafe"} color={COLOURS.darkGreen} />
-                </m.div>
-                <VerticalSpacer height="24px" />
-                <m.div
-                >
-                    <PrimaryButton text="See Menu" color={COLOURS.darkGreen} handleClick={handleClick}/>
-                </m.div>
+                <div className={styles.headingContainer}>
+                    <div>
+                        <Typography.Heading1 text={"Hello, I'm Dahee"} color={COLOURS.darkGreen} />
+                    </div>
+                    <VerticalSpacer height="24px" />
+                    <div>
+                        <PrimaryButton text="See Menu" color={COLOURS.darkGreen} handleClick={handleClick}/>
+                    </div>
+                </div>
             </m.div>
+            <div className={styles.imageContainer}>
+                <img src={Background} className={styles.image} />
+            </div>
+            <div className={styles.blobContainer}>
+                <img src={Blob1} className={`${styles.blob} ${styles.one}`} />
+                <img src={Blob2} className={`${styles.blob} ${styles.two}`} />
+            </div>
         </div>
     );
 };
