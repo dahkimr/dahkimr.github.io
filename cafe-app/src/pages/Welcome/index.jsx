@@ -23,8 +23,9 @@ const Welcome = () => {
                 transition={{ duration: 1, ease: "easeOut", delay: 0.14 }} 
             >
                 <div className={styles.headingContainer}>
-                    <div>
+                    <div className={styles.headingText}>
                         <Typography.Heading1 text={"Hello, I'm Dahee"} color={COLOURS.darkGreen} />
+                        <Typography.Heading2 text={"Programmer, designer, and gamer"} color={COLOURS.darkGreen} />
                     </div>
                     <VerticalSpacer height="24px" />
                     <div>

@@ -1,6 +1,7 @@
 import './App.css';
 import Welcome from 'pages/Welcome';
 import Menu from 'pages/Menu';
+import HTK from 'pages/Projects/HTK';
 import NavBar from 'components/molecules/NavBar';
 import { createTheme, ThemeProvider } from '@mui/material';
 import { Routes, Route, useLocation } from "react-router-dom";
@@ -28,6 +29,7 @@ const App = () => {
                 <Routes location={location} key={location.pathname}>
                     <Route index element={<Welcome />} />
                     <Route path="/menu" element={<Menu />} />
+                    <Route path="/healingtraumakorea" element={<HTK />} />
                 </Routes>
             </AnimatePresence>
         </ThemeProvider>

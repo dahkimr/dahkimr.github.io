@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    text-align: center;
+    // text-align: center;
     width: 100%;
     height: 100vh;
     // background: no-repeat url("../../assets/boba-hero-img-min.png");
@@ -17,11 +17,18 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-left: 16vw;
     z-index: 10;
 
     div {
         width: 100%;
     }
+}
+
+.headingText {
+    text-align: left;
+    // display: flex;
+    // justify-content: left;
 }
 
 .imageContainer {

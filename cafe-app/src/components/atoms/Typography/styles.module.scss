@@ -1,8 +1,13 @@
 .heading1 {
     font-family: "DM Sans", sans-serif;
-    font-size: 4vw;
-    white-space: pre-wrap;
-    line-height: 9vw;
+    font-size: calc(2vw + 40px);
+    // white-space: pre-wrap;
+}
+
+.heading2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: calc(2vw + 10px);
+    // white-space: pre-wrap;
 }
 
 .buttonLabel {
