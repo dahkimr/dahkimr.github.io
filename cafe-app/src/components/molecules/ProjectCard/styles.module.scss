@@ -1,10 +1,13 @@
-.container {
+.projectContainer {
     width: 18vw;
     text-align: center;
     background-color: #609966;
     border-radius: 10px;
     margin-right: 20px;
     padding: 20px 20px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
 }
 
 .textContainer {
@@ -23,8 +26,21 @@
 .labelContainer {
     display: flex;
     justify-content: left;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .rightSpace {
-    margin-right: 10px;
+    // margin-right: 10px;
+}
+
+.previewContainer {
+    position: absolute;
+    z-index: 10;
+    // top: 0;
+    // left: 0;
+}
+
+.previewImg {
+    width: 50vw;
 }

@@ -1,6 +1,6 @@
 .container {
     background-color: #89B188;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,6 +10,6 @@
 .tabContainer {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     padding-top: 40px
 }

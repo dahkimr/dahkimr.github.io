@@ -9,6 +9,7 @@ import BubbleTeaPurple from "assets/boba-purple.png";
 import IcecreamBrown from "assets/icecream-brown.png";
 import IcecreamPurple from "assets/icecream-purple.png";
 import IcecreamPink from "assets/icecream-pink.png";
+import AmandaVisuals from "assets/amandavisuals.png";
 import styles from "./styles.module.scss";
 import ProjectCard from "components/molecules/ProjectCard";
 import Typography from "components/atoms/Typography";
@@ -119,14 +120,16 @@ const Menu = () => {
                 <div>
                     <ProjectCard
                         image={BubbleTeaBrown}
-                        text="Healing Trauma Korea"
-                        description="Therapy website and I'm adding more description later"
-                        labels={["React", "HTML & CSS"]}
+                        previewImage={AmandaVisuals}
+                        text="Amanda Visuals"
+                        description="Built a UI/UX Portfolio site for a client."
+                        labels={["WordPress", "Elementor"]}
                     />
                 </div>
                 <div>
                     <ProjectCard
                         image={BubbleTeaGreen}
+                        previewImage={AmandaVisuals}
                         text="Healing Trauma Korea"
                         description="Therapy website and I'm adding more description later"
                         labels={["React", "HTML & CSS"]}
@@ -135,6 +138,7 @@ const Menu = () => {
                 <div>
                     <ProjectCard
                         image={BubbleTeaPurple}
+                        previewImage={AmandaVisuals}
                         text="Healing Trauma Korea"
                         description="Therapy website and I'm adding more description later"
                         labels={["React", "HTML & CSS"]}
