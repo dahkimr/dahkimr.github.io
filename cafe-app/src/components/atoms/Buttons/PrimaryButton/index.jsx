@@ -5,10 +5,10 @@ import "./styles.scss";
 const PrimaryButton = ({text, handleClick}) => (
     <>
         <button className="primary front" onClick={handleClick}>
-            <Typography.ButtonLabel text={text} />
+            <Typography.PrimaryButtonLabel text={text} />
         </button>
         <button className="primary behind">
-            <Typography.ButtonLabel text={text} />
+            <Typography.PrimaryButtonLabel text={text} />
         </button>
     </>
 );

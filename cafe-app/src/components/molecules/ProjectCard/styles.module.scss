@@ -4,19 +4,43 @@
     background-color: #609966;
     border-radius: 10px;
     margin-right: 20px;
-    padding: 20px 20px;
     position: relative;
     z-index: 1;
-    cursor: pointer;
+}
+
+.imgContainer {
+    height: 30vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    overflow: hidden;
 }
 
 .textContainer {
     text-align: left;
+    padding: 20px 20px;
 }
 
 .image {
-    width: 12vw;
+    height: 90%;
     filter: drop-shadow(16px, 16px, black);
+    padding-top: 20px;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 68%;
+}
+
+.previewImg {
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -28,19 +52,4 @@
     justify-content: left;
     flex-wrap: wrap;
     gap: 10px;
-}
-
-.rightSpace {
-    // margin-right: 10px;
-}
-
-.previewContainer {
-    position: absolute;
-    z-index: 10;
-    // top: 0;
-    // left: 0;
-}
-
-.previewImg {
-    width: 50vw;
 }
