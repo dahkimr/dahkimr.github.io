@@ -1,15 +1,26 @@
 .container {
     background-color: #89B188;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100vh;
 }
 
 .tabContainer {
     display: flex;
     justify-content: center;
     align-items: start;
-    padding-top: 40px
+    padding-top: 40px;
+    gap: 20px;
+}
+
+@media (max-width: 40em) {
+    .container {
+        height: auto;
+        margin-top: 6vh;
+    }
+    .tabContainer {
+        flex-direction: column;
+    }
 }

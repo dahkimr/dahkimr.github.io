@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Tabs, Tab, Box } from "@mui/material";
+import { Tabs, Tab, Grid } from "@mui/material";
 import { motion as m, usePresence, useAnimate, stagger } from "framer-motion";
 import CoffeeIcon from '@mui/icons-material/Coffee';
 import IcecreamIcon from '@mui/icons-material/Icecream';
@@ -109,11 +109,11 @@ const Menu = () => {
                         {...a11yProps(1)}
                         disableRipple
                     />
-                    <Tab
+                    {/* <Tab
                         label={<Typography.TabLabel text="Games" />}
                         {...a11yProps(2)}
                         disableRipple
-                    />
+                    /> */}
                 </Tabs>
             </m.div>
             <CustomTabPanel value={tabValue} index={0}>
@@ -165,7 +165,7 @@ const Menu = () => {
                     labels={["React", "HTML & CSS"]}
                 />
             </CustomTabPanel>
-            <CustomTabPanel value={tabValue} index={2}>
+            {/* <CustomTabPanel value={tabValue} index={2}>
                 <ProjectCard
                     image={BubbleTeaBrown}
                     text="Healing Trauma Korea"
@@ -184,7 +184,7 @@ const Menu = () => {
                     description="Therapy website and I'm adding more description later"
                     labels={["React", "HTML & CSS"]}
                 />
-            </CustomTabPanel>
+            </CustomTabPanel> */}
         </div>
     );
 };

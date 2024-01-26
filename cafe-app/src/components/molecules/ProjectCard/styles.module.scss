@@ -1,9 +1,8 @@
 .projectContainer {
-    width: 18vw;
+    width: 20vw;
     text-align: center;
     background-color: #609966;
     border-radius: 10px;
-    margin-right: 20px;
     position: relative;
     z-index: 1;
 }
@@ -22,6 +21,7 @@
 }
 
 .image {
+    // width: 50px;
     height: 90%;
     filter: drop-shadow(16px, 16px, black);
     padding-top: 20px;
@@ -52,4 +52,18 @@
     justify-content: left;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+@media (max-width: 40em) {
+    .projectContainer {
+        width: 70vw;
+    }
+    
+    .textContainer {
+        text-align: center;
+    }
+
+    .labelContainer {
+        justify-content: center;
+    }
 }
