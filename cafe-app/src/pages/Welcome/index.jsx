@@ -25,7 +25,7 @@ const Welcome = () => {
                 <div className={styles.headingContainer}>
                     <div className={styles.headingText}>
                         <Typography.Heading1 text={"Hello, I'm Dahee"} color={COLOURS.darkGreen} />
-                        <Typography.Heading2 text={"Programmer, designer, and gamer"} color={COLOURS.darkGreen} />
+                        <Typography.Heading2 text={"Website designer & developer"} color={COLOURS.darkGreen} />
                     </div>
                     <VerticalSpacer height="24px" />
                     <div>

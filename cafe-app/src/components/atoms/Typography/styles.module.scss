@@ -1,18 +1,18 @@
 .heading1 {
     font-family: "DM Sans", sans-serif;
-    font-size: calc(2vw + 40px);
+    font-size: calc(2.2vw + 36px);
     // white-space: pre-wrap;
 }
 
 .heading2 {
     font-family: "DM Sans", sans-serif;
-    font-size: calc(2vw + 10px);
+    font-size: calc(2.2vw + 12px);
     // white-space: pre-wrap;
 }
 
 .primaryButtonLabel {
     font-family: "Poppins", sans-serif;
-    font-size: calc(1vw + 8px);
+    font-size: clamp(16px, 0.6vw + 10px, 28px);
 }
 
 .buttonLabel {
