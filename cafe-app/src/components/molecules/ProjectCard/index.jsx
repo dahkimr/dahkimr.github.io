@@ -34,11 +34,11 @@ const ProjectCard = ({
         >
             <div
                 className={`${styles.projectContainer} projectCard`}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
             >
                 <div
                     className={styles.imgContainer}
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
                 >
                     {isHovered ? 
                         <div className={styles.previewImgContainer}>

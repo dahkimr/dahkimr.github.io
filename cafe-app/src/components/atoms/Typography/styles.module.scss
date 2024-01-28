@@ -10,6 +10,11 @@
     // white-space: pre-wrap;
 }
 
+.projectTitle {
+    font-family: "DM Sans", sans-serif;
+    font-size: calc(2.2vw + 20px);
+}
+
 .primaryButtonLabel {
     font-family: "Poppins", sans-serif;
     font-size: clamp(16px, 0.6vw + 10px, 28px);

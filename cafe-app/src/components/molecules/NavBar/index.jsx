@@ -20,7 +20,7 @@ const NavBar = () => {
                 <div className={styles.links}>
                     <Link to="/"><Typography.Link text="Home" color={COLOURS.darkGreen}/></Link>
                     <Link to="/menu"><Typography.Link text="Menu" color={COLOURS.darkGreen}/></Link>
-                    <Link to="/healingtraumakorea"><Typography.Link text="Healing" color={COLOURS.darkGreen}/></Link>
+                    <Link to="/amandavisuals"><Typography.Link text="AV" color={COLOURS.darkGreen}/></Link>
                 </div>
             </Toolbar>
         </AppBar>  

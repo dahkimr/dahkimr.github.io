@@ -10,6 +10,10 @@ const Heading2 = ({text, color}) => (
     <div className={styles.heading2} style={{color}}>{text}</div>
 );
 
+const ProjectTitle = ({text, color}) => (
+    <div className={styles.projectTitle} style={{color}}>{text}</div>
+)
+
 const PrimaryButtonLabel = ({text, color}) => (
     <div className={styles.primaryButtonLabel} style={{color}}>{text}</div>
 );
@@ -42,6 +46,7 @@ const Link = ({text, color}) => (
 export default {
     Heading1,
     Heading2,
+    ProjectTitle,
     PrimaryButtonLabel,
     ButtonLabel,
     CardTitle1,
