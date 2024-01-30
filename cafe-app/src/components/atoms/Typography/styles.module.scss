@@ -13,6 +13,19 @@
 .projectTitle {
     font-family: "DM Sans", sans-serif;
     font-size: calc(2.2vw + 20px);
+    font-weight: 600;
+}
+
+.sectionTitle1 {
+    font-family: "DM Sans", sans-serif;
+    font-size: calc(2vw + 12px);
+    font-weight: 600;
+}
+
+.sectionTitle2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: calc(2vw + 8px);
+    font-weight: 600;
 }
 
 .primaryButtonLabel {
@@ -28,6 +41,12 @@
 .cardTitle1 {
     font-family: "Poppins", sans-serif;
     font-size: 1.4rem;
+}
+
+.cardTitle1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
 }
 
 .cardDescription1 {
@@ -50,4 +69,8 @@
     font-family: "Poppins", sans-serif;
     font-size: calc(1vw + 6px);
     font-weight: 600;
+}
+
+.listItem {font-family: "Poppins", sans-serif;
+    font-size: calc(2vw + 2px);
 }

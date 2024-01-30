@@ -9,7 +9,7 @@ import Button from 'components/atoms/Buttons/Button';
 
 const ProjectCard = ({
         text, description, labels, image, alt,
-        previewImage, previewAlt
+        previewImage, previewAlt, handleClick,
     }) => {
     const [isHovered, setIsHovered] = useState(false);
 
@@ -44,7 +44,7 @@ const ProjectCard = ({
                         <div className={styles.previewImgContainer}>
                             <img src={previewImage} alt={previewAlt | "image"} className={styles.previewImg} />
                             <div className={styles.button}>
-                                <Button text="See Project" />
+                                <Button text="See Project" handleClick={handleClick} />
                             </div>
                         </div>
                     :

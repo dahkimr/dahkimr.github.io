@@ -12,7 +12,15 @@ const Heading2 = ({text, color}) => (
 
 const ProjectTitle = ({text, color}) => (
     <div className={styles.projectTitle} style={{color}}>{text}</div>
-)
+);
+
+const SectionTitle1 = ({text, color}) => (
+    <div className={styles.sectionTitle1} style={{color}}>{text}</div>
+);
+
+const SectionTitle2 = ({text, color}) => (
+    <div className={styles.sectionTitle2} style={{color}}>{text}</div>
+);
 
 const PrimaryButtonLabel = ({text, color}) => (
     <div className={styles.primaryButtonLabel} style={{color}}>{text}</div>
@@ -22,9 +30,12 @@ const ButtonLabel = ({text, color}) => (
     <div className={styles.buttonLabel} style={{color}}>{text}</div>
 );
 
-
 const CardTitle1 = ({text, color}) => (
     <div className={styles.cardTitle1} style={{color}}>{text}</div>
+);
+
+const CardTitle2 = ({text, color}) => (
+    <div className={styles.cardTitle2} style={{color}}>{text}</div>
 );
 
 const CardDescription1 = ({text, color}) => (
@@ -41,17 +52,25 @@ const TabLabel = ({text, color}) => (
 
 const Link = ({text, color}) => (
     <div className={styles.link} style={{color}}>{text}</div>
-)
+);
+
+const ListItem = ({text, color}) => (
+    <div className={styles.listItem} style={{color}}>{text}</div>
+);
 
 export default {
     Heading1,
     Heading2,
     ProjectTitle,
+    SectionTitle1,
+    SectionTitle2,
     PrimaryButtonLabel,
     ButtonLabel,
     CardTitle1,
+    CardTitle2,
     CardDescription1,
     Label,
     TabLabel,
     Link,
+    ListItem,
 };

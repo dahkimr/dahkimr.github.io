@@ -1,5 +1,5 @@
 .projectContainer {
-    width: 20vw;
+    width: 24vw;
     text-align: center;
     background-color: #609966;
     border-radius: 10px;
@@ -8,7 +8,7 @@
 }
 
 .imgContainer {
-    height: 30vh;
+    height: calc(30vh + 20px);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     position: relative;

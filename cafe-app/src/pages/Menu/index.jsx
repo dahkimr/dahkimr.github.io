@@ -13,6 +13,7 @@ import AmandaVisuals from "assets/amandavisuals.png";
 import styles from "./styles.module.scss";
 import ProjectCard from "components/molecules/ProjectCard";
 import Typography from "components/atoms/Typography";
+import { useNavigate } from "react-router-dom";
 
 const Menu = () => {
     const [tabValue, setTabValue] = useState(0);
@@ -23,6 +24,8 @@ const Menu = () => {
     const handleChange = (_event, newValue) => {
         setTabValue(newValue);
     };
+
+    const navigate = useNavigate();
 
     const CustomTabPanel = (props) => {
         const { children, value, index, ...other } = props;
@@ -123,6 +126,7 @@ const Menu = () => {
                         previewImage={AmandaVisuals}
                         text="Amanda Visuals"
                         description="Built a UI/UX Portfolio site for a client."
+                        handleClick={() => navigate("/amandavisuals")}
                         labels={["WordPress", "Elementor"]}
                     />
                 </div>
