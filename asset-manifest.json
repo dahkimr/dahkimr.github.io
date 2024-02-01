@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.92a5fdfb.css",
-    "main.js": "/static/js/main.d85b37c7.js",
+    "main.js": "/static/js/main.dd1b5d69.js",
     "static/js/787.2da4da8e.chunk.js": "/static/js/787.2da4da8e.chunk.js",
     "static/media/healingtraumakorea.png": "/static/media/healingtraumakorea.f0dedff454aeda14ef7d.png",
     "static/media/newhopefellowship.jpg": "/static/media/newhopefellowship.e1e8122e3b60169d4eb5.jpg",
@@ -20,11 +20,11 @@
     "static/media/blob2.svg": "/static/media/blob2.26c66ade2c6059b3149d396208857b94.svg",
     "static/media/blob1.svg": "/static/media/blob1.16d11a71470775130b88b768d784b7f0.svg",
     "main.92a5fdfb.css.map": "/static/css/main.92a5fdfb.css.map",
-    "main.d85b37c7.js.map": "/static/js/main.d85b37c7.js.map",
+    "main.dd1b5d69.js.map": "/static/js/main.dd1b5d69.js.map",
     "787.2da4da8e.chunk.js.map": "/static/js/787.2da4da8e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.92a5fdfb.css",
-    "static/js/main.d85b37c7.js"
+    "static/js/main.dd1b5d69.js"
   ]
 }
