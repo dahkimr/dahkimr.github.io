@@ -42,7 +42,7 @@ const ProjectCard = ({
                 >
                     {isHovered ? 
                         <div className={styles.previewImgContainer}>
-                            <img src={previewImage} alt={previewAlt | "image"} className={styles.previewImg} />
+                            <div className={styles.previewImg} style={{backgroundImage: `url(${previewImage})`}} />
                             <div className={styles.button}>
                                 <Button text="See Project" handleClick={handleClick} />
                             </div>
@@ -52,7 +52,9 @@ const ProjectCard = ({
                     }
                 </div>
                 <div className={styles.textContainer}>
-                    <Typography.CardTitle1 color={COLOURS.white} text={text} />
+                    <div className={styles.cardTitle}>
+                        <Typography.CardTitle1 color={COLOURS.white} text={text} />
+                    </div>
                     <VerticalSpacer height="6px" />
                     <Typography.CardDescription1 color={COLOURS.white} text={description} />
                     <VerticalSpacer height="18px" />

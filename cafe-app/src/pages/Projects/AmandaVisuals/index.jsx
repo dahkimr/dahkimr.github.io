@@ -2,6 +2,7 @@ import Typography from 'components/atoms/Typography';
 import React from 'react';
 import AmandaVisualsPortfolio from "assets/amandavisuals.png";
 import AmandaVisualsFormGif from "assets/amandavisuals-form.gif";
+import IconTitle from 'components/molecules/IconTitle';
 import ListItem from 'components/atoms/ListItem';
 import { COLOURS } from "styles/variables";
 import styles from "./styles.module.scss";
@@ -41,7 +42,7 @@ const AmandaVisuals = () => {
       <div className={styles.processContainer}>
         <div className={styles.card}>
           <div className={styles.cardTitle}>
-            <Typography.CardTitle1 text="Tools" color={COLOURS.whiteGreen} />
+            <IconTitle.Tools />
           </div>
           <ul>
             <li>I used this and that to get the desired resulting aesthetic to customize</li>
@@ -50,7 +51,7 @@ const AmandaVisuals = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.cardTitle}>
-            <Typography.CardTitle1 text="Process" color={COLOURS.whiteGreen} />
+            <IconTitle.Process />
           </div>
           <ul>
             <li>I used this and that to get the desired resulting aesthetic to customize</li>
@@ -59,7 +60,7 @@ const AmandaVisuals = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.cardTitle}>
-            <Typography.CardTitle1 text="Result" color={COLOURS.whiteGreen} />
+            <IconTitle.Result />
           </div>
           <ul>
             <li>I used this and that to get the desired resulting aesthetic to customize</li>
@@ -77,7 +78,7 @@ const AmandaVisuals = () => {
       <div className={styles.processContainer}>
         <div className={styles.card}>
           <div className={styles.cardTitle}>
-            <Typography.CardTitle1 text="Tools" color={COLOURS.whiteGreen} />
+            <IconTitle.Tools />
           </div>
           <ul>
             <li>I used this and that to get the desired resulting aesthetic to customize</li>
@@ -86,7 +87,7 @@ const AmandaVisuals = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.cardTitle}>
-            <Typography.CardTitle1 text="Process" color={COLOURS.whiteGreen} />
+            <IconTitle.Process />
           </div>
           <ul>
             <li>I used this and that to get the desired resulting aesthetic to customize</li>
@@ -95,7 +96,7 @@ const AmandaVisuals = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.cardTitle}>
-            <Typography.CardTitle1 text="Result" color={COLOURS.whiteGreen} />
+            <IconTitle.Result />
           </div>
           <ul>
             <li>I used this and that to get the desired resulting aesthetic to customize</li>

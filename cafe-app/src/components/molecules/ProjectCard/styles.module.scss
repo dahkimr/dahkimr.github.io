@@ -20,6 +20,10 @@
     padding: 20px 20px;
 }
 
+.cardTitle {
+    // text-align: center;
+}
+
 .image {
     // width: 50px;
     height: 90%;
@@ -37,10 +41,14 @@
 
 .previewImg {
     height: 100%;
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .logo {

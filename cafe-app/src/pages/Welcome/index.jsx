@@ -25,11 +25,11 @@ const Welcome = () => {
                 <div className={styles.headingContainer}>
                     <div className={styles.headingText}>
                         <Typography.Heading1 text={"Hello, I'm Dahee"} color={COLOURS.darkGreen} />
-                        <Typography.Heading2 text={"Website designer & developer"} color={COLOURS.darkGreen} />
+                        <Typography.Heading2 text={"Web developer & Graphic designer"} color={COLOURS.darkGreen} />
                     </div>
                     <VerticalSpacer height="24px" />
                     <div>
-                        <PrimaryButton text="See Menu" color={COLOURS.darkGreen} handleClick={handleClick}/>
+                        <PrimaryButton text="See Project" color={COLOURS.darkGreen} handleClick={handleClick}/>
                     </div>
                 </div>
             </m.div>

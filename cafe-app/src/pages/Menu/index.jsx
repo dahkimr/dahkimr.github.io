@@ -10,6 +10,10 @@ import IcecreamBrown from "assets/icecream-brown.png";
 import IcecreamPurple from "assets/icecream-purple.png";
 import IcecreamPink from "assets/icecream-pink.png";
 import AmandaVisuals from "assets/amandavisuals.png";
+import HTKImage from "assets/healingtraumakorea.png";
+import IndieImage from "assets/indiesnowfall.png";
+import NewImage from "assets/newhopefellowship.jpg";
+import RTSImage from "assets/rts.png";
 import styles from "./styles.module.scss";
 import ProjectCard from "components/molecules/ProjectCard";
 import Typography from "components/atoms/Typography";
@@ -133,18 +137,20 @@ const Menu = () => {
                 <div>
                     <ProjectCard
                         image={BubbleTeaGreen}
-                        previewImage={AmandaVisuals}
+                        previewImage={HTKImage}
                         text="Healing Trauma Korea"
                         description="Therapy website and I'm adding more description later"
+                        handleClick={() => navigate("/healingtrauma")}
                         labels={["React", "HTML & CSS"]}
                     />
                 </div>
                 <div>
                     <ProjectCard
                         image={BubbleTeaPurple}
-                        previewImage={AmandaVisuals}
-                        text="Healing Trauma Korea"
+                        previewImage={IndieImage}
+                        text="Indie Snowfall"
                         description="Therapy website and I'm adding more description later"
+                        handleClick={() => navigate("/indiesnowfall")}
                         labels={["React", "HTML & CSS"]}
                     />
                 </div>
@@ -152,19 +158,16 @@ const Menu = () => {
             <CustomTabPanel value={tabValue} index={1}>
                 <ProjectCard
                     image={IcecreamBrown}
-                    text="Healing Trauma Korea"
+                    previewImage={NewImage}
+                    text="New Hope Fellowship"
                     description="Therapy website and I'm adding more description later"
+                    handleClick={() => navigate("/newhopefellowship")}
                     labels={["React", "HTML & CSS"]}
                 />
                 <ProjectCard
                     image={IcecreamPink}
-                    text="Healing Trauma Korea"
-                    description="Therapy website and I'm adding more description later"
-                    labels={["React", "HTML & CSS"]}
-                />
-                <ProjectCard
-                    image={IcecreamPurple}
-                    text="Healing Trauma Korea"
+                    text="Ryerson Tech Society"
+                    previewImage={RTSImage}
                     description="Therapy website and I'm adding more description later"
                     labels={["React", "HTML & CSS"]}
                 />

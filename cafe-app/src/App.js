@@ -7,6 +7,9 @@ import { createTheme, ThemeProvider } from '@mui/material';
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from 'framer-motion';
 import { COLOURS } from 'styles/variables';
+import HealingTrauma from 'pages/Projects/HealingTrauma';
+import IndieSnowfall from 'pages/Projects/IndieSnowfall';
+import NewHopeFellowship from 'pages/Projects/NewHopeFellowship';
 
 const App = () => {
     const theme = createTheme({
@@ -30,6 +33,9 @@ const App = () => {
                     <Route index element={<Welcome />} />
                     <Route path="/menu" element={<Menu />} />
                     <Route path="/amandavisuals" element={<AmandaVisuals />} />
+                    <Route path="/healingtrauma" element={<HealingTrauma />} />
+                    <Route path="/indiesnowfall" element={<IndieSnowfall />} />
+                    <Route path="/newhopefellowship" element={<NewHopeFellowship />} />
                 </Routes>
             </AnimatePresence>
         </ThemeProvider>
