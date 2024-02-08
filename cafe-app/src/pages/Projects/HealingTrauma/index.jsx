@@ -1,6 +1,6 @@
 import Typography from 'components/atoms/Typography';
 import React from 'react';
-import HTKImage from "assets/healingtraumakorea.png";
+import HTKImage from "assets/htk.png";
 import AmandaVisualsFormGif from "assets/amandavisuals-form.gif";
 import ListItem from 'components/atoms/ListItem';
 import { COLOURS } from "styles/variables";

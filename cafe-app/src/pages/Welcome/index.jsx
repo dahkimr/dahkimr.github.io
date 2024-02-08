@@ -24,14 +24,19 @@ const Welcome = () => {
             >
                 <div className={styles.headingContainer}>
                     <div className={styles.headingText}>
-                        <Typography.Heading1 text={"Hello, I'm Dahee"} color={COLOURS.darkGreen} />
+                        <div className={styles.mainText}>
+                            <Typography.Heading1 text={"Hello, I'm Dahee"} color={COLOURS.darkGreen} />
+                        </div>
                         <div className={styles.headingTextContainer}>
-                            <Typography.Heading2 text={`A full stack developer & designer who loves building websites`} color={COLOURS.darkGreen} />
+                            <Typography.Heading2 text={`A full stack developer & designer who brews websites that are as delightful and refreshing as bubble tea`} color={COLOURS.darkGreen} />
+                            {/* <div className={styles.spaced}> */}
+                                {/* <Typography.Heading2 text={`who brews websites that are as delightful and refreshing as bubble tea`} color={COLOURS.darkGreen} /> */}
+                            {/* </div> */}
                         </div>
                     </div>
                     <VerticalSpacer height="24px" />
                     <div>
-                        <PrimaryButton text="See Project" color={COLOURS.darkGreen} handleClick={handleClick}/>
+                        <PrimaryButton text="See Projects" color={COLOURS.darkGreen} handleClick={handleClick}/>
                     </div>
                 </div>
             </m.div>

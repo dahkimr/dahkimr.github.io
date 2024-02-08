@@ -9,7 +9,7 @@ import Button from 'components/atoms/Buttons/Button';
 
 const ProjectCard = ({
         text, description, labels, image, alt,
-        previewImage, previewAlt, handleClick,
+        previewImage, previewAlt, pageLink,
     }) => {
     const [isHovered, setIsHovered] = useState(false);
 
@@ -30,12 +30,13 @@ const ProjectCard = ({
     };
 
     return (
+        <a href={pageLink} className={styles.link}>
         <div className={styles.container}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
         >
             <div
                 className={`${styles.projectContainer} projectCard`}
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
             >
                 <div
                     className={styles.imgContainer}
@@ -43,9 +44,6 @@ const ProjectCard = ({
                     {isHovered ? 
                         <div className={styles.previewImgContainer}>
                             <div className={styles.previewImg} style={{backgroundImage: `url(${previewImage})`}} />
-                            <div className={styles.button}>
-                                <Button text="See Project" handleClick={handleClick} />
-                            </div>
                         </div>
                     :
                     <img src={image} alt={alt || "image"} className={styles.image} />
@@ -64,6 +62,7 @@ const ProjectCard = ({
                 </div>
             </div>
         </div>
+        </a>
     );
 };
 

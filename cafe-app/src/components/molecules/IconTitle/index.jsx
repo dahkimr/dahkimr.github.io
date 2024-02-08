@@ -1,34 +1,34 @@
 import React from "react";
-import ToolIcon from "@mui/icons-material/HandymanOutlined";
-import ProcessIcon from "@mui/icons-material/FlagOutlined";
-import ResultIcon from "@mui/icons-material/InventoryOutlined";
+import GoalIcon from "@mui/icons-material/FlagOutlined";
+import ProblemIcon from "@mui/icons-material/ErrorOutline";
+import SolutionIcon from "@mui/icons-material/LightbulbOutlined";
 import { COLOURS } from "styles/variables";
 import Typography from "components/atoms/Typography";
 import styles from "./styles.module.scss";
 
-const Tools = () => (
+const Goal = () => (
     <div className={styles.title}>
-      <ToolIcon sx={{ fontSize: 50 }} />
-      <Typography.CardTitle1 text="Tools" color={COLOURS.whiteGreen} />
+      <GoalIcon sx={{ fontSize: 50 }} />
+      <Typography.CardTitle1 text="Goal" color={COLOURS.whiteGreen} />
     </div>
 );
 
-const Process = () => (
+const Problem = () => (
     <div className={styles.title}>
-      <ProcessIcon sx={{ fontSize: 50 }} />
-      <Typography.CardTitle1 text="Process" color={COLOURS.whiteGreen} />
+      <ProblemIcon sx={{ fontSize: 50 }} />
+      <Typography.CardTitle1 text="Problem" color={COLOURS.whiteGreen} />
     </div>
 );
 
-const Result = () => (
+const Solution = () => (
     <div className={styles.title}>
-      <ResultIcon sx={{ fontSize: 50 }} />
-      <Typography.CardTitle1 text="Result" color={COLOURS.whiteGreen} />
+      <SolutionIcon sx={{ fontSize: 50 }} />
+      <Typography.CardTitle1 text="Solution" color={COLOURS.whiteGreen} />
     </div>
 );
 
 export default {
-    Tools,
-    Process,
-    Result
+    Goal,
+    Problem,
+    Solution
 };

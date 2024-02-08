@@ -1,6 +1,6 @@
 import Typography from 'components/atoms/Typography';
 import React from 'react';
-import MainImage from "assets/newhopefellowship.jpg";
+import MainImage from "assets/newhope.png";
 import AmandaVisualsFormGif from "assets/amandavisuals-form.gif";
 import ListItem from 'components/atoms/ListItem';
 import { COLOURS } from "styles/variables";
