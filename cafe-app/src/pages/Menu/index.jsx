@@ -131,7 +131,7 @@ const Menu = () => {
                         text="Amanda Visuals"
                         description="UI/UX portfolio website tailored to the client's specifications, using their Figma designs as the blueprint."
                         labels={["WordPress", "Elementor"]}
-                        pageLink="/amandavisuals"
+                        pageLink="/#/amandavisuals"
                     />
                 </div>
                 <div>
@@ -140,7 +140,7 @@ const Menu = () => {
                         previewImage={HTKImage}
                         text="Healing Trauma Korea"
                         description="Website for a therapist, displaying contact details and comprehensive information about her company."
-                        pageLink="/healingtrauma"
+                        pageLink="/#/healingtrauma"
                         labels={["React", "HTML & CSS"]}
                     />
                 </div>
@@ -150,7 +150,7 @@ const Menu = () => {
                         previewImage={IndieImage}
                         text="Indie Snowfall"
                         description="Concept design for a website where users can explore and discover new indie games."
-                        pageLink="/indiesnowfall"
+                        pageLink="/#/indiesnowfall"
                         labels={["Figma", "Procreate"]}
                     />
                 </div>
@@ -161,7 +161,7 @@ const Menu = () => {
                     previewImage={NewImage}
                     text="New Hope Fellowship"
                     description="Vibrant designs using hand-drawn and vector illustrations to effectively promote events."
-                    pageLink="/newhopefellowship"
+                    pageLink="/#/newhopefellowship"
                     labels={["Figma", "Procreate", "Canva"]}
                 />
                 <ProjectCard

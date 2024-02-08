@@ -2,6 +2,7 @@ import Typography from 'components/atoms/Typography';
 import React from 'react';
 import AmandaVisualsPortfolio from "assets/amandavisuals.png";
 import AmandaVisualsFormGif from "assets/amandavisuals-form.gif";
+import AmandaVisualsScrollGif from "assets/amandavisuals-scroll.gif";
 import IconTitle from 'components/molecules/IconTitle';
 import ListItem from 'components/atoms/ListItem';
 import { COLOURS } from "styles/variables";
@@ -38,7 +39,7 @@ const AmandaVisuals = () => {
         <Typography.SectionTitle2 text="Scroll Animation" color={COLOURS.darkGreen} />
       </div>
       <div className={styles.highlightPadded}>
-        <img src={AmandaVisualsFormGif} className={styles.projectImg} />
+        <img src={AmandaVisualsScrollGif} className={styles.projectImg} />
       </div>
       <div className={styles.processContainer}>
         <div className={styles.card}>
