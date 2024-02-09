@@ -46,19 +46,19 @@ const AmandaVisuals = () => {
           <div className={styles.cardTitle}>
             <IconTitle.Goal />
           </div>
-          <Typography.CardDescription2 text="Smooth animations to add visual interest to the case study cards" />
+          <Typography.CardDescription2 text="Smooth animations to add visual interest to the case study cards." />
         </div>
         <div className={styles.card}>
           <div className={styles.cardTitle}>
             <IconTitle.Problem /> 
           </div>
-          <Typography.CardDescription2 text="I could add the card animation with Elementor's built in functions, but not having the cards appear when the user scrolls down" />
+          <Typography.CardDescription2 text="I could add the card animation with Elementor's built in functions, but not having the cards appear when the user scrolls down." />
         </div>
         <div className={styles.card}>
           <div className={styles.cardTitle}>
             <IconTitle.Solution />
           </div>
-          <Typography.CardDescription2 text="I used CSS classes and JQuery functions to reveal cards as users scroll down the page" />
+          <Typography.CardDescription2 text="I used CSS classes and JQuery functions to reveal cards as users scroll down the page." />
         </div>
       </div>
       {/* Contact Form */}
@@ -73,19 +73,19 @@ const AmandaVisuals = () => {
           <div className={styles.cardTitle}>
             <IconTitle.Goal />
           </div>
-          <Typography.CardDescription2 text="An aesthetic and functional contact form that appears on the corner of the screen with a slide in animation" />
+          <Typography.CardDescription2 text="An aesthetic and functional contact form that appears on the corner of the screen with a slide in animation." />
         </div>
         <div className={styles.card}>
           <div className={styles.cardTitle}>
             <IconTitle.Problem />
           </div>
-          <Typography.CardDescription2 text="Built in free functions only allowed me to have a form overlay that took up the whole screen" />
+          <Typography.CardDescription2 text="Built in free functions only allowed me to have a form overlay that took up the whole screen." />
         </div>
         <div className={styles.card}>
           <div className={styles.cardTitle}>
             <IconTitle.Solution />
           </div>
-          <Typography.CardDescription2 text="I used JQuery functions to have the form appear and disappear, and used CSS to change the appearance of the default form" />
+          <Typography.CardDescription2 text="I used JQuery functions to have the form appear and disappear, and used CSS to change the appearance of the default form." />
         </div>
       </div>
       <div className={styles.aboutContainer}>
