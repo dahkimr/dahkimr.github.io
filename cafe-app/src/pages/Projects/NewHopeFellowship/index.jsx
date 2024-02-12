@@ -1,7 +1,7 @@
 import Typography from 'components/atoms/Typography';
 import React from 'react';
 import MainImage from "assets/newhope.png";
-import AmandaVisualsFormGif from "assets/amandavisuals-form.gif";
+import ClothingImage from "assets/newhope-clothing.png";
 import ListItem from 'components/atoms/ListItem';
 import { COLOURS } from "styles/variables";
 import styles from "./styles.module.scss";
@@ -13,7 +13,7 @@ const NewHopeFellowship = () => {
   return (
     <div className={styles.container}>
       <div className={styles.centerAlign}>
-        <Typography.ProjectTitle text="New Hope Fellowship Marketting" color={COLOURS.darkGreen} />
+        <Typography.ProjectTitle text="New Hope Fellowship Marketting" color={COLOURS.green} />
       </div>
       <div className={styles.imgContainer}>
         <a href="https://www.instagram.com/nhfdowntown/">
@@ -21,95 +21,73 @@ const NewHopeFellowship = () => {
         </a>
       </div>
       <div className={styles.aboutContainer}>
-        <Typography.SectionTitle1 text="Overview" color={COLOURS.whiteGreen} />
+        <Typography.SectionTitle1 text="Overview" color="white" />
         <ul className={styles.list}>
-          <ListItem text="Using Wordpress, I built a aesthetic and clean portfolio website for my client using their Figma designs." color={COLOURS.whiteGreen} />
-          <ListItem text="I mainly used Elementor and wrote custom code for more customization such as animations triggered by scroll, and a custom form." color={COLOURS.whiteGreen} />
+          <ListItem text="Designed multiple posters and social media posts to promote events. Created custom hand-drawn assets and svg illustrations to use in designs." color="white" />
         </ul>
       </div>
       <div className={styles.highlightContainer}>
         <div className={styles.highlightPadded}>
-          <Typography.SectionTitle1 text="Features" color={COLOURS.darkGreen} />
+          <Typography.SectionTitle1 text="Events" color={COLOURS.green} />
         </div>
       </div>
       {/* Case study animations */}
-      <div className={styles.sectionTitle}>
-        <Typography.SectionTitle2 text="Scroll Animation" color={COLOURS.darkGreen} />
-      </div>
-      <div className={styles.highlightPadded}>
-        <img src={AmandaVisualsFormGif} className={styles.projectImg} />
-      </div>
-      <div className={styles.processContainer}>
-        <div className={styles.card}>
-          <div className={styles.cardTitle}>
-            <IconTitle.Tools />
-          </div>
-          <ul>
-            <li>I used this and that to get the desired resulting aesthetic to customize</li>
-            <li>I also used blah and blah to get the form to open and close when it needs to.</li>
-          </ul>
+      <div className={styles.market}>
+        <div className={styles.sectionTitle}>
+          <Typography.SectionTitle2 text="Christmas Market" color="white" />
         </div>
-        <div className={styles.card}>
-          <div className={styles.cardTitle}>
-            <IconTitle.Process />
-          </div>
-          <ul>
-            <li>I used this and that to get the desired resulting aesthetic to customize</li>
-            <li>I also used blah and blah to get the form to open and close when it needs to.</li>
-          </ul>
+        <div className={styles.highlightPadded}>
+          <img src={MainImage} className={styles.projectImg} />
         </div>
-        <div className={styles.card}>
-          <div className={styles.cardTitle}>
-            <IconTitle.Result />
+        <div className={styles.processContainer}>
+          <div className={styles.card}>
+            <div className={styles.cardTitle}>
+              <IconTitle.Process color="white" />
+            </div>
+            <Typography.CardDescription2 text="Created a gridded design in black and white with placeholders to refine the layout and idea first. Then filled in the design with information and images." color="white" />
           </div>
-          <ul>
-            <li>I used this and that to get the desired resulting aesthetic to customize</li>
-            <li>I also used blah and blah to get the form to open and close when it needs to.</li>
-          </ul>
+          <div className={`${styles.card}`}>
+            <div className={styles.cardTitle}>
+              <IconTitle.DesignChoice color="white" />
+            </div>
+            <Typography.CardDescription2 text="Chose a color palette that matched the Christmas and cheery vibe of the event. Created custom svg images to showcase the activities and food at the market." color="white" />
+          </div>
+          <div className={styles.card}>
+            <div className={styles.cardTitle}>
+              <IconTitle.Result color="white" />
+            </div>
+            <Typography.CardDescription2 text="40+ people came out to the market and we earned over $500 from sales and donations." color="white" />
+          </div>
         </div>
       </div>
       {/* Contact Form */}
-      <div className={styles.sectionTitle}>
-        <Typography.SectionTitle2 text="Contact Form" color={COLOURS.darkGreen} />
-      </div>
-      <div className={styles.highlightPadded}>
-        <img src={AmandaVisualsFormGif} className={styles.projectImg} />
-      </div>
-      <div className={styles.processContainer}>
-        <div className={styles.card}>
-          <div className={styles.cardTitle}>
-            <IconTitle.Tools />
-          </div>
-          <ul>
-            <li>I used this and that to get the desired resulting aesthetic to customize</li>
-            <li>I also used blah and blah to get the form to open and close when it needs to.</li>
-          </ul>
+      <div className={styles.clothing}>
+        <div className={styles.sectionTitle}>
+          <Typography.SectionTitle2 text="Clothing Swap" color="white" />
         </div>
-        <div className={styles.card}>
-          <div className={styles.cardTitle}>
-            <IconTitle.Process />
-          </div>
-          <ul>
-            <li>I used this and that to get the desired resulting aesthetic to customize</li>
-            <li>I also used blah and blah to get the form to open and close when it needs to.</li>
-          </ul>
+        <div className={styles.highlightPadded}>
+          <img src={ClothingImage} className={styles.projectImg} />
         </div>
-        <div className={styles.card}>
-          <div className={styles.cardTitle}>
-            <IconTitle.Result />
+        <div className={styles.processContainer}>
+          <div className={styles.card}>
+            <div className={styles.cardTitle}>
+              <IconTitle.DesignChoice color="white" />
+            </div>
+            <Typography.CardDescription2 text="Chose a orange and green colour palette since this was a fall event. Placed event info in speech bubbles to give the impression that people are talking about the event and spreading news about it." color="white" />
           </div>
-          <ul>
-            <li>I used this and that to get the desired resulting aesthetic to customize</li>
-            <li>I also used blah and blah to get the form to open and close when it needs to.</li>
-          </ul>
+          <div className={styles.card}>
+            <div className={styles.cardTitle}>
+              <IconTitle.DesignChoice color="white" />
+            </div>
+            <Typography.CardDescription2 text="Drew various fall clothing items to give examples of what to bring. The background color looked flat so added a little bit of noise to add texture to it." color="white" />
+          </div>
+          <div className={styles.card}>
+            <div className={styles.cardTitle}>
+              <IconTitle.Result color="white" />
+            </div>
+            <Typography.CardDescription2 text="20+ people came out to bring and look at clothes. We had substantial clothing donations which were given to Yonge Street Missions after the event." color="white" />
+          </div>
         </div>
-      </div>
-      <div className={styles.aboutContainer}>
-        <Typography.SectionTitle1 text="Testimonial from client" color={COLOURS.whiteGreen} />
-        <ul className={styles.list}>
-          <ListItem text="Using Wordpress, I built a aesthetic and clean portfolio website for my client using their Figma designs." color={COLOURS.whiteGreen} />
-          <ListItem text="I mainly used Elementor and wrote custom code for more customization such as animations triggered by scroll, and a custom form." color={COLOURS.whiteGreen} />
-        </ul>
       </div>
     </div>
     );

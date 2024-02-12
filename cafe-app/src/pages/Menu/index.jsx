@@ -13,7 +13,7 @@ import AmandaVisuals from "assets/amandavisuals.png";
 import HTKImage from "assets/htk.png";
 import IndieImage from "assets/indie.png";
 import NewImage from "assets/newhope.png";
-import RTSImage from "assets/rts.png";
+import DesignImage from "assets/dailydesign.png";
 import styles from "./styles.module.scss";
 import ProjectCard from "components/molecules/ProjectCard";
 import Typography from "components/atoms/Typography";
@@ -167,8 +167,9 @@ const Menu = () => {
                 <ProjectCard
                     image={IcecreamPink}
                     text="100 Days of Design"
-                    previewImage={RTSImage}
+                    previewImage={DesignImage}
                     description="UI designs created to enhance and refine skills."
+                    pageLink="/#/designchallenge"
                     labels={["Figma", "Procreate"]}
                 />
             </CustomTabPanel>

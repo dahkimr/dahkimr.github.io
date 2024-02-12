@@ -1,7 +1,8 @@
 import Typography from 'components/atoms/Typography';
 import React from 'react';
 import MainImage from "assets/indie.png";
-import AmandaVisualsFormGif from "assets/amandavisuals-form.gif";
+import CategoryGif from "assets/indie-category.gif";
+import SignUpImage from "assets/indie-signup.png";
 import ListItem from 'components/atoms/ListItem';
 import { COLOURS } from "styles/variables";
 import styles from "./styles.module.scss";
@@ -16,15 +17,14 @@ const IndieSnowfall = () => {
         <Typography.ProjectTitle text="Indie Game Website" color={COLOURS.darkGreen} />
       </div>
       <div className={styles.imgContainer}>
-        <a href="https://www.figma.com/file/ROWskZjPSGin69DI7K9koW/Indie-Snowfall?type=design&node-id=425%3A201&mode=design&t=MWMRdKWj7NuyNUFN-1">
+        <a href="https://www.figma.com/proto/ROWskZjPSGin69DI7K9koW/Indie-Snowfall?page-id=0%3A1&type=design&node-id=425-201&viewport=614%2C-935%2C0.25&t=m3PhNyIKDJBs5IQg-1&scaling=min-zoom&mode=design">
           <img src={MainImage} className={styles.img} />
         </a>
       </div>
       <div className={styles.aboutContainer}>
         <Typography.SectionTitle1 text="Overview" color={COLOURS.whiteGreen} />
         <ul className={styles.list}>
-          <ListItem text="Using Wordpress, I built a aesthetic and clean portfolio website for my client using their Figma designs." color={COLOURS.whiteGreen} />
-          <ListItem text="I mainly used Elementor and wrote custom code for more customization such as animations triggered by scroll, and a custom form." color={COLOURS.whiteGreen} />
+          <ListItem text="Since big company game titles are more heavily marketted, I conceptualized a website where people can discover new games to play by indie companies." color={COLOURS.whiteGreen} />
         </ul>
       </div>
       <div className={styles.highlightContainer}>
@@ -34,83 +34,65 @@ const IndieSnowfall = () => {
       </div>
       {/* Case study animations */}
       <div className={styles.sectionTitle}>
-        <Typography.SectionTitle2 text="Scroll Animation" color={COLOURS.darkGreen} />
+        <Typography.SectionTitle2 text="Game Categories" color={COLOURS.darkGreen} />
       </div>
       <div className={styles.highlightPadded}>
-        <img src={AmandaVisualsFormGif} className={styles.projectImg} />
+        <img src={CategoryGif} className={styles.projectImg} />
       </div>
       <div className={styles.processContainer}>
         <div className={styles.card}>
           <div className={styles.cardTitle}>
-            <IconTitle.Tools />
+            <IconTitle.Goal />
           </div>
-          <ul>
-            <li>I used this and that to get the desired resulting aesthetic to customize</li>
-            <li>I also used blah and blah to get the form to open and close when it needs to.</li>
-          </ul>
+          <Typography.CardDescription2 text="Show different categories of games so users can look for more games in the category they enjoy." />
+        </div>
+        <div className={styles.card}>
+          <div className={styles.cardTitle}>
+            <IconTitle.DesignChoice />
+          </div>
+          <Typography.CardDescription2 text="Kept the Netflix style of a card carousel, but put a gamer spin on it by placing the cards in a console." />
         </div>
         <div className={styles.card}>
           <div className={styles.cardTitle}>
             <IconTitle.Process />
           </div>
-          <ul>
-            <li>I used this and that to get the desired resulting aesthetic to customize</li>
-            <li>I also used blah and blah to get the form to open and close when it needs to.</li>
-          </ul>
-        </div>
-        <div className={styles.card}>
-          <div className={styles.cardTitle}>
-            <IconTitle.Result />
-          </div>
-          <ul>
-            <li>I used this and that to get the desired resulting aesthetic to customize</li>
-            <li>I also used blah and blah to get the form to open and close when it needs to.</li>
-          </ul>
+          <Typography.CardDescription2 text="Used Figma's prototyping tools to make the d-pad clickable and only highlight the buttons when there's more content." />
         </div>
       </div>
       {/* Contact Form */}
       <div className={styles.sectionTitle}>
-        <Typography.SectionTitle2 text="Contact Form" color={COLOURS.darkGreen} />
+        <Typography.SectionTitle2 text="Sign Up Page" color={COLOURS.darkGreen} />
       </div>
       <div className={styles.highlightPadded}>
-        <img src={AmandaVisualsFormGif} className={styles.projectImg} />
+        <img src={SignUpImage} className={styles.projectImg} />
       </div>
       <div className={styles.processContainer}>
         <div className={styles.card}>
           <div className={styles.cardTitle}>
-            <IconTitle.Tools />
+            <IconTitle.Goal />
           </div>
-          <ul>
-            <li>I used this and that to get the desired resulting aesthetic to customize</li>
-            <li>I also used blah and blah to get the form to open and close when it needs to.</li>
-          </ul>
+          <Typography.CardDescription2 text="A sign up form that follows UI design principles and matches the theme of the site." />
         </div>
         <div className={styles.card}>
           <div className={styles.cardTitle}>
-            <IconTitle.Process />
+            <IconTitle.DesignChoice />
           </div>
-          <ul>
-            <li>I used this and that to get the desired resulting aesthetic to customize</li>
-            <li>I also used blah and blah to get the form to open and close when it needs to.</li>
-          </ul>
+          <Typography.CardDescription2 text="Used the brand colours and kept the form white so the text is clear. Added small elements (e.g. the d-pad and the paw) next to the text to tie in this form to the rest of the site." />
         </div>
         <div className={styles.card}>
           <div className={styles.cardTitle}>
-            <IconTitle.Result />
+            <IconTitle.DesignChoice />
           </div>
-          <ul>
-            <li>I used this and that to get the desired resulting aesthetic to customize</li>
-            <li>I also used blah and blah to get the form to open and close when it needs to.</li>
-          </ul>
+          <Typography.CardDescription2 text="Brought over assets from other pages (e.g. the cat and controller) to create more visual interest." />
         </div>
       </div>
-      <div className={styles.aboutContainer}>
+      {/* <div className={styles.aboutContainer}>
         <Typography.SectionTitle1 text="Testimonial from client" color={COLOURS.whiteGreen} />
         <ul className={styles.list}>
           <ListItem text="Using Wordpress, I built a aesthetic and clean portfolio website for my client using their Figma designs." color={COLOURS.whiteGreen} />
           <ListItem text="I mainly used Elementor and wrote custom code for more customization such as animations triggered by scroll, and a custom form." color={COLOURS.whiteGreen} />
         </ul>
-      </div>
+      </div> */}
     </div>
     );
 }

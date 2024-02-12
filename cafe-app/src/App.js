@@ -10,6 +10,7 @@ import { COLOURS } from 'styles/variables';
 import HealingTrauma from 'pages/Projects/HealingTrauma';
 import IndieSnowfall from 'pages/Projects/IndieSnowfall';
 import NewHopeFellowship from 'pages/Projects/NewHopeFellowship';
+import DesignChallenge from 'pages/Projects/DesignChallenge';
 
 const App = () => {
     const theme = createTheme({
@@ -36,6 +37,7 @@ const App = () => {
                     <Route path="/healingtrauma" element={<HealingTrauma />} />
                     <Route path="/indiesnowfall" element={<IndieSnowfall />} />
                     <Route path="/newhopefellowship" element={<NewHopeFellowship />} />
+                    <Route path="/designchallenge" element={<DesignChallenge />} />
                 </Routes>
             </AnimatePresence>
         </ThemeProvider>

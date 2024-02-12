@@ -32,6 +32,15 @@
     // justify-content: left;
 }
 
+.iconLinks {
+    margin: 4px 0 4px 0;
+    display: flex;
+    gap: 10px;
+    a {
+        color: #2F5533 !important;
+    }
+}
+
 .mainText {
     
 }

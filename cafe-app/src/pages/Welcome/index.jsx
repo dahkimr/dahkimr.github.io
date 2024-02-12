@@ -9,6 +9,8 @@ import styles from "./styles.module.scss";
 import Blob1 from "assets/blob1.svg";
 import Blob2 from "assets/blob2.svg";
 import Background from "assets/boba-hero-img-min.png";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GithubIcon from "@mui/icons-material/GitHub";
 
 const Welcome = () => {
     const navigate = useNavigate();
@@ -29,10 +31,15 @@ const Welcome = () => {
                         </div>
                         <div className={styles.headingTextContainer}>
                             <Typography.Heading2 text={`A full stack developer & designer who brews websites that are as delightful and refreshing as bubble tea`} color={COLOURS.darkGreen} />
-                            {/* <div className={styles.spaced}> */}
-                                {/* <Typography.Heading2 text={`who brews websites that are as delightful and refreshing as bubble tea`} color={COLOURS.darkGreen} /> */}
-                            {/* </div> */}
                         </div>
+                    </div>
+                    <div className={styles.iconLinks}>
+                        <a href="https://www.linkedin.com/in/dahee-kim">
+                            <LinkedInIcon sx={{ fontSize: 36 }} />
+                        </a>
+                        <a href="https://github.com/dahkimr/">
+                            <GithubIcon sx={{ fontSize: 36 }} />
+                        </a>
                     </div>
                     <VerticalSpacer height="24px" />
                     <div>
