@@ -9,3 +9,19 @@
         text-decoration: none;
     }
 }
+
+.header {
+    position: absolute;
+    width: 100%;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 26px 30px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}

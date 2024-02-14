@@ -66,6 +66,14 @@ const ListItem = ({text, color}) => (
     <div className={styles.listItem} style={{color}}>{text}</div>
 );
 
+const Logo = ({text, color}) => (
+    <div className={styles.logo} style={{color}}>{text}</div>
+);
+
+const NavLink = ({text, color}) => (
+    <div className={styles.navLink} style={{color}}>{text}</div>
+);
+
 export default {
     Heading1,
     Heading2,
@@ -83,4 +91,6 @@ export default {
     TabLabel,
     Link,
     ListItem,
+    Logo,
+    NavLink,
 };
