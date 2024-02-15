@@ -11,7 +11,7 @@ import HealingTrauma from 'pages/Projects/HealingTrauma';
 import IndieSnowfall from 'pages/Projects/IndieSnowfall';
 import NewHopeFellowship from 'pages/Projects/NewHopeFellowship';
 import DesignChallenge from 'pages/Projects/DesignChallenge';
-import ScrollToTop from 'fixes/ScrollToTop';
+import ScrollToTop from 'ScrollToTop';
 
 const App = () => {
     const theme = createTheme({
