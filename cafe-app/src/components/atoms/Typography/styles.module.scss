@@ -54,19 +54,19 @@
 
 .subSectionTitle1 {
     font-family: "Rubik", sans-serif;
-    font-size: clamp(24px, 40px, calc(2vw + 6px));
+    font-size: clamp(24px, calc(2vw + 6px), 40px);
     font-weight: 600;
 }
 
 .sectionTitle1 {
     font-family: "Rubik", sans-serif;
-    font-size: clamp(24px, 40px, calc(2vw + 12px));
+    font-size: clamp(24px, calc(2vw + 12px), 40px);
     font-weight: 600;
 }
 
 .sectionTitle2 {
     font-family: "DM Sans", sans-serif;
-    font-size: clamp(24px, 40px, calc(2vw + 8px));
+    font-size: clamp(24px, calc(2vw + 8px), 40px);
     font-weight: 600;
 }
 
@@ -87,7 +87,7 @@
 
 .cardTitle1 {
     font-family: "Poppins", sans-serif;
-    font-size: clamp(16px, 26px, calc(1vw + 16px));
+    font-size: clamp(16px, calc(1vw + 16px), 26px);
     font-weight: bold;
 }
 
@@ -99,7 +99,7 @@
 
 .cardDescription2 {
     font-family: "Poppins", sans-serif;
-    font-size: clamp(16px, 30px, calc(1vw + 4px));
+    font-size: clamp(16px, calc(1vw + 4px), 30px);
 }
 
 .label {
