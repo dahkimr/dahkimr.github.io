@@ -22,14 +22,24 @@
 }
 
 .heading2 {
+    display: block;
     font-family: "DM Sans", sans-serif;
     font-size: calc(2vw + 2px);
+
+    @media only screen and (max-width: 600px) {
+        display: none;
+    }
 }
 
 .mobileHeading2 {
+    display: none;
     font-family: "DM Sans", sans-serif;
     font-size: 24px;
     white-space: pre-wrap;
+
+    @media only screen and (max-width: 600px) {
+        display: block;
+    }
 }
 
 .projectTitle {
