@@ -11,6 +11,7 @@ import HealingTrauma from 'pages/Projects/HealingTrauma';
 import IndieSnowfall from 'pages/Projects/IndieSnowfall';
 import NewHopeFellowship from 'pages/Projects/NewHopeFellowship';
 import DesignChallenge from 'pages/Projects/DesignChallenge';
+import ScrollToTop from 'fixes/ScrollToTop';
 
 const App = () => {
     const theme = createTheme({
@@ -29,6 +30,7 @@ const App = () => {
     return (
         <ThemeProvider theme={theme}>
             <AnimatePresence>
+                <ScrollToTop />
                 <NavBar location={location} />
                 <Routes location={location} key={location.pathname}>
                     <Route index element={<Welcome />} />
