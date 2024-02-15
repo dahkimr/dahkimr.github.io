@@ -11,42 +11,72 @@ import styles from "./styles.module.scss";
 
 const Result = ({color}) => (
     <div className={styles.title}>
-      <GoalIcon sx={{ fontSize: 50 }} />
+      <ResultIcon sx={{
+        fontSize: {
+          xs: "44px",
+          md: "50px"
+        }
+      }} />
       <Typography.CardTitle1 text="Result" color={color || COLOURS.whiteGreen} />
     </div>
 );
 
 const Goal = ({color}) => (
     <div className={styles.title}>
-      <GoalIcon sx={{ fontSize: 50 }} />
+      <GoalIcon sx={{
+        fontSize: {
+          xs: "44px",
+          md: "50px"
+        }
+      }} />
       <Typography.CardTitle1 text="Goal" color={color || COLOURS.whiteGreen} />
     </div>
 );
 
 const Problem = ({color}) => (
     <div className={styles.title}>
-      <ProblemIcon sx={{ fontSize: 50 }} />
+      <ProblemIcon sx={{
+        fontSize: {
+          xs: "44px",
+          md: "50px"
+        }
+      }} />
       <Typography.CardTitle1 text="Problem" color={color || COLOURS.whiteGreen} />
     </div>
 );
 
 const Solution = ({color}) => (
     <div className={styles.title}>
-      <SolutionIcon sx={{ fontSize: 50 }} />
+      <SolutionIcon sx={{
+        fontSize: {
+          xs: "44px",
+          md: "50px"
+        }
+      }} />
       <Typography.CardTitle1 text="Solution" color={color || COLOURS.whiteGreen} />
     </div>
 );
 
 const DesignChoice = ({color}) => (
     <div className={styles.title}>
-      <DesignIcon sx={{ fontSize: 50 }} />
+      <DesignIcon sx={{
+        fontSize: {
+          xs: "44px",
+          md: "50px"
+        }
+      }} />
       <Typography.CardTitle1 text="Design Choice" color={color || COLOURS.whiteGreen} />
     </div>
 );
 
 const Process = ({color}) => (
     <div className={styles.title}>
-      <ProcessIcon sx={{ fontSize: 50 }} />
+      <ProcessIcon sx={{
+        fontSize: {
+          xs: "44px",
+          md: "50px"
+        }
+      }} />
       <Typography.CardTitle1 text="Process" color={color || COLOURS.whiteGreen} />
     </div>
 );

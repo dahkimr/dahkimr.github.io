@@ -4,11 +4,20 @@
 
 .centerAlign {
   text-align: center;
+
+  @media only screen and (max-width: 600px) {
+    padding: 0 5vw;
+  }
 }
 
 .imgContainer {
   margin: 20px 0 50px 0;
   padding: 0 20vw;
+
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 26px;
+    padding: 0 5vw;
+  }
 }
 
 .img {
@@ -24,15 +33,26 @@
 .aboutContainer {
   padding: 40px 12vw;
   background-color: #4d7951;
+
+  @media only screen and (max-width: 600px) {
+      padding: 22px 5vw;
+  }
 }
 
 .highlightPadded {
   padding: 0 12vw;
+
+  @media only screen and (max-width: 600px) {
+    padding: 0 5vw;
+  }
 }
 
 .highlightContainer {
   margin-top: 44px;
-  // text-align: center;
+
+  @media only screen and (max-width: 600px) {
+    margin-top: 26px;
+  }
 }
 
 .sectionTitle {
@@ -40,16 +60,26 @@
   padding: 10px 12vw;
   margin: 32px 0 44px 0;
   text-align: center;
+
+  @media only screen and (max-width: 600px) {
+    margin: 20px 0 26px 0;
+  }
 }
 
 .processContainer {
   display: flex;
   justify-content: center;
   align-items: start;
-  // flex: 100px;
   gap: 24px;
   margin: 44px 12vw 66px 12vw;
   color: #EDF2EE;
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+    margin: 26px 5vw 30px 5vw;
+    gap: 16px;
+  }
 }
 
 .card {
@@ -63,6 +93,11 @@
     padding-left: 20px;
     margin: 0;
   }
+
+  @media only screen and (max-width: 600px) {
+    width: 70vw;
+    padding: 26px 20px;
+  }
 }
 
 .cardTitle {
@@ -72,8 +107,13 @@
 
 .list {
   margin: 20px 0 0 0;
+
   li + li {
-    margin: 8px;
+    margin-top: 8px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    margin-top: 12px;
   }
 }
 
@@ -84,5 +124,12 @@
 
   img {
     max-width: 30%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 30px;
+    img {
+      max-width: 80%;
+    }
   }
 }

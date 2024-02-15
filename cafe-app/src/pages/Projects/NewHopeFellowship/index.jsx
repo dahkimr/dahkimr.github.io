@@ -27,7 +27,7 @@ const NewHopeFellowship = () => {
         </div>
       </m.div>
       <div className={styles.aboutContainer}>
-        <Typography.SectionTitle1 text="Overview" color={COLOURS.whiteGreen} />
+        <Typography.SubsectionTitle1 text="Overview" color={COLOURS.whiteGreen} />
         <ul className={styles.list}>
           <ListItem text="Designed multiple posters and social media posts to promote events. Created custom hand-drawn assets and svg illustrations to use in designs." color="white" />
         </ul>
@@ -97,6 +97,6 @@ const NewHopeFellowship = () => {
       </div>
     </div>
     );
-}
+};
 
 export default NewHopeFellowship;
