@@ -1,26 +1,32 @@
 import Typography from 'components/atoms/Typography';
 import React from 'react';
+import { motion as m } from "framer-motion";
 import HTKImage from "assets/htk.png";
 import AboutMeImage from "assets/htk-about.png";
 import HealingImage from "assets/htk-healing.png";
 import ListItem from 'components/atoms/ListItem';
 import { COLOURS } from "styles/variables";
-import styles from "./styles.module.scss";
-import { useNavigate } from 'react-router-dom';
+import styles from "../styles.module.scss";
 import IconTitle from 'components/molecules/IconTitle';
 
 const HealingTrauma = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.centerAlign}>
-        <Typography.ProjectTitle text="Healing Trauma Therapy Website" color={COLOURS.darkGreen} />
-      </div>
-      <div className={styles.imgContainer}>
-        <a href="https://healingtraumakorea.com/">
-          <img src={HTKImage} className={styles.img} />
-        </a>
-      </div>
+      <m.div 
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ type: "spring", stiffness: 100 }}
+      >
+        <div className={styles.centerAlign}>
+          <Typography.ProjectTitle text="Healing Trauma Therapy Website" color={COLOURS.darkGreen} />
+        </div>
+        <div className={styles.imgContainer}>
+          <a href="https://healingtraumakorea.com/">
+            <img src={HTKImage} className={styles.img} />
+          </a>
+        </div>
+      </m.div>
       <div className={styles.aboutContainer}>
         <Typography.SectionTitle1 text="Overview" color={COLOURS.whiteGreen} />
         <ul className={styles.list}>
@@ -87,13 +93,6 @@ const HealingTrauma = () => {
             <Typography.CardDescription2 text="Displayed the therapist's hand-drawn image and a quote side by side like a gallery." />
         </div>
       </div>
-      {/* <div className={styles.aboutContainer}>
-        <Typography.SectionTitle1 text="Testimonial from client" color={COLOURS.whiteGreen} />
-        <ul className={styles.list}>
-          <ListItem text="Using Wordpress, I built a aesthetic and clean portfolio website for my client using their Figma designs." color={COLOURS.whiteGreen} />
-          <ListItem text="I mainly used Elementor and wrote custom code for more customization such as animations triggered by scroll, and a custom form." color={COLOURS.whiteGreen} />
-        </ul>
-      </div> */}
     </div>
     );
 }

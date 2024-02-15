@@ -1,25 +1,31 @@
 import Typography from 'components/atoms/Typography';
 import React from 'react';
+import { motion as m } from "framer-motion";
 import MainImage from "assets/newhope.png";
 import ClothingImage from "assets/newhope-clothing.png";
 import ListItem from 'components/atoms/ListItem';
 import { COLOURS } from "styles/variables";
-import styles from "./styles.module.scss";
-import { useNavigate } from 'react-router-dom';
+import styles from "../styles.module.scss";
 import IconTitle from 'components/molecules/IconTitle';
 
 const NewHopeFellowship = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.centerAlign}>
-        <Typography.ProjectTitle text="New Hope Fellowship Marketting" color={COLOURS.darkGreen} />
-      </div>
-      <div className={styles.imgContainer}>
-        <a href="https://www.instagram.com/nhfdowntown/">
-          <img src={MainImage} className={styles.img} />
-        </a>
-      </div>
+      <m.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ type: "spring", stiffness: 100 }}
+      >
+        <div className={styles.centerAlign}>
+          <Typography.ProjectTitle text="New Hope Fellowship Marketting" color={COLOURS.darkGreen} />
+        </div>
+        <div className={styles.imgContainer}>
+          <a href="https://www.instagram.com/nhfdowntown/">
+            <img src={MainImage} className={styles.img} />
+          </a>
+        </div>
+      </m.div>
       <div className={styles.aboutContainer}>
         <Typography.SectionTitle1 text="Overview" color={COLOURS.whiteGreen} />
         <ul className={styles.list}>
@@ -46,7 +52,7 @@ const NewHopeFellowship = () => {
             </div>
             <Typography.CardDescription2 text="Created a gridded design in black and white with placeholders to refine the layout and idea first. Then filled in the design with information and images." color="white" />
           </div>
-          <div className={`${styles.card}`}>
+          <div className={styles.card}>
             <div className={styles.cardTitle}>
               <IconTitle.DesignChoice />
             </div>

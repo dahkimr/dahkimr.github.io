@@ -15,10 +15,10 @@
     gap: 20px;
 }
 
-@media (max-width: 40em) {
+@media only screen and (max-width: 768px) {
     .container {
         height: auto;
-        margin-top: 6vh;
+        padding: 10vh 0;
     }
     .tabContainer {
         flex-direction: column;

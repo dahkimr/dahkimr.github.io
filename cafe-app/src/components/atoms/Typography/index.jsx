@@ -6,8 +6,16 @@ const Heading1 = ({text, color}) => (
     <div className={styles.heading1} style={{color}}>{text}</div>
 );
 
+const MobileHeading1 = ({text, color}) => (
+    <div className={styles.mobileHeading1} style={{color}}>{text}</div>
+);
+
 const Heading2 = ({text, color}) => (
     <div className={styles.heading2} style={{color}}>{text}</div>
+);
+
+const MobileHeading2 = ({text, color}) => (
+    <div className={styles.mobileHeading2} style={{color}}>{text}</div>
 );
 
 const ProjectTitle = ({text, color}) => (
@@ -76,7 +84,9 @@ const NavLink = ({text, color}) => (
 
 export default {
     Heading1,
+    MobileHeading1,
     Heading2,
+    MobileHeading2,
     ProjectTitle,
     SubsectionTitle1,
     SectionTitle1,

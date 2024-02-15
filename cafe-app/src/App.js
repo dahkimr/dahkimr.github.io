@@ -29,7 +29,7 @@ const App = () => {
     return (
         <ThemeProvider theme={theme}>
             <AnimatePresence>
-                <NavBar />
+                <NavBar location={location} />
                 <Routes location={location} key={location.pathname}>
                     <Route index element={<Welcome />} />
                     <Route path="/menu" element={<Menu />} />

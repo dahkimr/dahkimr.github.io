@@ -28,9 +28,12 @@ const Welcome = () => {
                     <div className={styles.headingText}>
                         <div className={styles.mainText}>
                             <Typography.Heading1 text={"Hello, I'm Dahee"} color={COLOURS.darkGreen} />
+                            <Typography.MobileHeading1 text={"Hello,\nI'm Dahee"} color={COLOURS.darkGreen} />
                         </div>
                         <div className={styles.headingTextContainer}>
-                            <Typography.Heading2 text={`A full stack developer & designer who brews websites that are as delightful and refreshing as bubble tea`} color={COLOURS.darkGreen} />
+                            {/* <Typography.Heading2 text={`A full stack developer & designer who brews websites that are as delightful and refreshing as bubble tea`} color={COLOURS.darkGreen} /> */}
+                            <Typography.MobileHeading2 text={`A full stack developer & designer who\nbrews websites that are as delightful\nand refreshing as bubble tea`} color={COLOURS.darkGreen} />
+
                         </div>
                     </div>
                     <div className={styles.iconLinks}>

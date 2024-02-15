@@ -1,26 +1,32 @@
 import Typography from 'components/atoms/Typography';
 import React from 'react';
+import { motion as m } from "framer-motion";
 import AmandaVisualsPortfolio from "assets/amandavisuals.png";
 import AmandaVisualsFormGif from "assets/amandavisuals-form.gif";
 import AmandaVisualsScrollGif from "assets/amandavisuals-scroll.gif";
 import IconTitle from 'components/molecules/IconTitle';
 import ListItem from 'components/atoms/ListItem';
 import { COLOURS } from "styles/variables";
-import styles from "./styles.module.scss";
-import { useNavigate } from 'react-router-dom';
+import styles from "../styles.module.scss";
 
 const AmandaVisuals = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.centerAlign}>
-        <Typography.ProjectTitle text="Amanda Visuals Portfolio" color={COLOURS.darkGreen} />
-      </div>
-      <div className={styles.imgContainer}>
-        <a href="https://amandavisuals.com/">
-          <img src={AmandaVisualsPortfolio} className={styles.img} />
-        </a>
-      </div>
+      <m.div 
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ type: "spring", stiffness: 100 }}
+      >
+        <div className={styles.centerAlign}>
+          <Typography.ProjectTitle text="Amanda Visuals Portfolio" color={COLOURS.darkGreen} />
+        </div>
+        <div className={styles.imgContainer}>
+          <a href="https://amandavisuals.com/">
+            <img src={AmandaVisualsPortfolio} className={styles.img} />
+          </a>
+        </div>
+      </m.div>
       <div className={styles.aboutContainer}>
         <Typography.SubsectionTitle1 text="Overview" color={COLOURS.whiteGreen} />
         <ul className={styles.list}>

@@ -1,26 +1,32 @@
 import Typography from 'components/atoms/Typography';
 import React from 'react';
+import { motion as m } from "framer-motion";
 import MainImage from "assets/indie.png";
 import CategoryGif from "assets/indie-category.gif";
 import SignUpImage from "assets/indie-signup.png";
 import ListItem from 'components/atoms/ListItem';
 import { COLOURS } from "styles/variables";
-import styles from "./styles.module.scss";
-import { useNavigate } from 'react-router-dom';
+import styles from "../styles.module.scss";
 import IconTitle from 'components/molecules/IconTitle';
 
 const IndieSnowfall = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.centerAlign}>
-        <Typography.ProjectTitle text="Indie Game Website" color={COLOURS.darkGreen} />
-      </div>
-      <div className={styles.imgContainer}>
-        <a href="https://www.figma.com/proto/ROWskZjPSGin69DI7K9koW/Indie-Snowfall?page-id=0%3A1&type=design&node-id=425-201&viewport=614%2C-935%2C0.25&t=m3PhNyIKDJBs5IQg-1&scaling=min-zoom&mode=design">
-          <img src={MainImage} className={styles.img} />
-        </a>
-      </div>
+      <m.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ type: "spring", stiffness: 100 }}
+      >
+        <div className={styles.centerAlign}>
+          <Typography.ProjectTitle text="Indie Game Website" color={COLOURS.darkGreen} />
+        </div>
+        <div className={styles.imgContainer}>
+          <a href="https://www.figma.com/proto/ROWskZjPSGin69DI7K9koW/Indie-Snowfall?page-id=0%3A1&type=design&node-id=425-201&viewport=614%2C-935%2C0.25&t=m3PhNyIKDJBs5IQg-1&scaling=min-zoom&mode=design">
+            <img src={MainImage} className={styles.img} />
+          </a>
+        </div>
+      </m.div>
       <div className={styles.aboutContainer}>
         <Typography.SectionTitle1 text="Overview" color={COLOURS.whiteGreen} />
         <ul className={styles.list}>
@@ -86,13 +92,6 @@ const IndieSnowfall = () => {
           <Typography.CardDescription2 text="Brought over assets from other pages (e.g. the cat and controller) to create more visual interest." />
         </div>
       </div>
-      {/* <div className={styles.aboutContainer}>
-        <Typography.SectionTitle1 text="Testimonial from client" color={COLOURS.whiteGreen} />
-        <ul className={styles.list}>
-          <ListItem text="Using Wordpress, I built a aesthetic and clean portfolio website for my client using their Figma designs." color={COLOURS.whiteGreen} />
-          <ListItem text="I mainly used Elementor and wrote custom code for more customization such as animations triggered by scroll, and a custom form." color={COLOURS.whiteGreen} />
-        </ul>
-      </div> */}
     </div>
     );
 }
