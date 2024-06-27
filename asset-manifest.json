@@ -1,13 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.1d879e3d.css",
-    "main.js": "/static/js/main.76eff44d.js",
+    "main.js": "/static/js/main.d4040f2c.js",
     "static/js/787.2da4da8e.chunk.js": "/static/js/787.2da4da8e.chunk.js",
     "static/media/amandavisuals-scroll.gif": "/static/media/amandavisuals-scroll.2645c6640473d9f5d06f.gif",
     "static/media/indie-category.gif": "/static/media/indie-category.0798fac0dabef22e41f0.gif",
     "static/media/htk.png": "/static/media/htk.4a5514928952f652dc44.png",
     "static/media/dailydesign.png": "/static/media/dailydesign.d5951dc1d2e574319894.png",
+    "static/media/journalpet-userflow.png": "/static/media/journalpet-userflow.04619586baf9c8934d69.png",
     "static/media/amandavisuals.png": "/static/media/amandavisuals.46e6f16ca5fe6c73e4c3.png",
+    "static/media/journalpet.png": "/static/media/journalpet.4c9b9026d873ada829c9.png",
+    "static/media/journalpet-wireframes.png": "/static/media/journalpet-wireframes.52fdf508eb6de7396789.png",
+    "static/media/journalpet-personas.png": "/static/media/journalpet-personas.02d598092cf45920bbb5.png",
     "static/media/htk-healing.png": "/static/media/htk-healing.782eecf2fc7375703219.png",
     "static/media/amandavisuals-form.gif": "/static/media/amandavisuals-form.4caf055e5988068c8fcf.gif",
     "static/media/htk-small.png": "/static/media/htk-small.28a280124b02c94e4715.png",
@@ -33,11 +37,11 @@
     "static/media/blob2.svg": "/static/media/blob2.26c66ade2c6059b3149d396208857b94.svg",
     "static/media/blob1.svg": "/static/media/blob1.16d11a71470775130b88b768d784b7f0.svg",
     "main.1d879e3d.css.map": "/static/css/main.1d879e3d.css.map",
-    "main.76eff44d.js.map": "/static/js/main.76eff44d.js.map",
+    "main.d4040f2c.js.map": "/static/js/main.d4040f2c.js.map",
     "787.2da4da8e.chunk.js.map": "/static/js/787.2da4da8e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1d879e3d.css",
-    "static/js/main.76eff44d.js"
+    "static/js/main.d4040f2c.js"
   ]
 }
