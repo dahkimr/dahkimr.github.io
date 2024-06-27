@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1d879e3d.css",
-    "main.js": "/static/js/main.d4040f2c.js",
+    "main.js": "/static/js/main.97cef67f.js",
     "static/js/787.2da4da8e.chunk.js": "/static/js/787.2da4da8e.chunk.js",
     "static/media/amandavisuals-scroll.gif": "/static/media/amandavisuals-scroll.2645c6640473d9f5d06f.gif",
     "static/media/indie-category.gif": "/static/media/indie-category.0798fac0dabef22e41f0.gif",
@@ -24,6 +24,7 @@
     "static/media/newhope-small.png": "/static/media/newhope-small.1293e617b8db76248d6d.png",
     "static/media/boba-hero-img-min.png": "/static/media/boba-hero-img-min.f94bc07942e37b94c6c3.png",
     "static/media/newhope-clothing.png": "/static/media/newhope-clothing.ced7c5a03d4cfa790bea.png",
+    "static/media/journalpet-small.png": "/static/media/journalpet-small.b9d1edc0ea3a4d80b025.png",
     "static/media/indie-small.png": "/static/media/indie-small.325f321f020f60854501.png",
     "static/media/boba-brown.png": "/static/media/boba-brown.f28965f8b7d99d8b52d3.png",
     "static/media/boba-green.png": "/static/media/boba-green.995893969ee9c9f2ee25.png",
@@ -37,11 +38,11 @@
     "static/media/blob2.svg": "/static/media/blob2.26c66ade2c6059b3149d396208857b94.svg",
     "static/media/blob1.svg": "/static/media/blob1.16d11a71470775130b88b768d784b7f0.svg",
     "main.1d879e3d.css.map": "/static/css/main.1d879e3d.css.map",
-    "main.d4040f2c.js.map": "/static/js/main.d4040f2c.js.map",
+    "main.97cef67f.js.map": "/static/js/main.97cef67f.js.map",
     "787.2da4da8e.chunk.js.map": "/static/js/787.2da4da8e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1d879e3d.css",
-    "static/js/main.d4040f2c.js"
+    "static/js/main.97cef67f.js"
   ]
 }
