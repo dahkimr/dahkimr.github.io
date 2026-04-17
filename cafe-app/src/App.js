@@ -11,6 +11,7 @@ import HealingTrauma from 'pages/Projects/HealingTrauma';
 import IndieSnowfall from 'pages/Projects/IndieSnowfall';
 import NewHopeFellowship from 'pages/Projects/NewHopeFellowship';
 import DesignChallenge from 'pages/Projects/DesignChallenge';
+import JournalPet from "pages/Projects/JournalPet";
 import ScrollToTop from 'ScrollToTop';
 
 const App = () => {
@@ -40,6 +41,7 @@ const App = () => {
                     <Route path="/indiesnowfall" element={<IndieSnowfall />} />
                     <Route path="/newhopefellowship" element={<NewHopeFellowship />} />
                     <Route path="/designchallenge" element={<DesignChallenge />} />
+                    <Route path="/journalpet" element={<JournalPet />} />
                 </Routes>
             </AnimatePresence>
         </ThemeProvider>

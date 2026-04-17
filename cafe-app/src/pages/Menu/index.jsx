@@ -14,6 +14,7 @@ import HTKImage from "assets/htk-small.png";
 import IndieImage from "assets/indie-small.png";
 import NewImage from "assets/newhope-small.png";
 import DesignImage from "assets/dailydesign-small.png";
+import JournalPetImage from "assets/journalpet-small.png";
 import styles from "./styles.module.scss";
 import ProjectCard from "components/molecules/ProjectCard";
 import Typography from "components/atoms/Typography";
@@ -171,6 +172,14 @@ const Menu = () => {
                     description="UI designs created to enhance and refine skills."
                     pageLink="/#/designchallenge"
                     labels={["Figma", "Procreate"]}
+                />
+                <ProjectCard
+                    image={IcecreamPurple}
+                    text="Journal Pet"
+                    previewImage={JournalPetImage}
+                    description="A journalling app where users can keep track of mental health exercises and do them regularly."
+                    pageLink="/#/journalpet"
+                    labels={["Figma", "Illustrator"]}
                 />
             </CustomTabPanel>
             {/* <CustomTabPanel value={tabValue} index={2}>
